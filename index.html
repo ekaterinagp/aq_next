@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <title>Home - ArchitectureQuote</title>
+  </head>
+  <body>
+      <div class="loaderWrapper">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 46.4 48.5" xml:space="preserve" class="loader">
+     
+                  <g clip-path="url(#clip-path)">
+                       <path pathlength="1" class="st0" d="M30.8,17.7L30.3,18v25.3h0.5V17.7z"/>
+                             <path pathlength="1" class="st0" d="M28.3,43.3h0.6V18.7l-0.6,0.2V43.3z"/>
+                             <path pathlength="1" class="st0" d="M29.8,18.2l-0.5,0.2v24.9h0.5V18.2z"/>
+                             <path pathlength="1" class="st0" d="M31.3,43.3h5.8V19.1l-5.8-1.6V43.3z"/>
+                                                 <path pathlength="1" class="st0" d="M25.7,9.9v33.4h2.6V18.9l3-1.4v25.8h1.8V12.1L25.7,9.9z"/>
+                     <path pathlength="1" class="st0" d="M25.1,10.2l-0.7,0.4v32.7h0.7V10.2z"/>
+                     <path pathlength="1" class="st0" d="M21.9,43.3h0.6V11.5l-0.6,0.3V43.3z"/>
+                     <path pathlength="1" class="st0" d="M23.8,10.8l-0.7,0.4v32.1h0.7V10.8z"/>
+                  <path pathlength="1" class="st0" d="M28.3,43.3V18.9l0.6-0.3V2.8L19.2,0v43.3h2.7V11.8l3.8-1.9v33.4H28.3z"/>
+                             <path pathlength="1" class="st0" d="M18.4,0.4l-0.9,0.4v42.5h0.9V0.4z"/>
+                             <path pathlength="1" class="st0" d="M14.2,43.3h0.9V2l-0.9,0.4V43.3z"/>
+                             <path pathlength="1" class="st0" d="M16.7,1.2l-0.9,0.4v41.7h0.9V1.2z"/>
+                                <path pathlength="1" class="st0" d="M10.4,24.6l-0.3,0.2v18.5h0.3V24.6z"/>
+                     <path pathlength="1" class="st0" d="M11.2,24.2l-0.4,0.2v18.9h0.4V24.2z"/>
+                     <path pathlength="1" class="st0" d="M9.3,43.3h0.4V24.9l-0.4,0.2V43.3z"/>
+                     <path pathlength="1" class="st0" d="M11.5,24v19.3h2.7V24.8L11.5,24z"/>
+                 <path pathlength="1" class="st1" d="M40.5,40.7c8.5-9.5,7.8-24.1-1.7-32.6c-2.8-2.5-6.2-4.4-9.9-5.3v6.4c8.9,3.1,13.6,12.9,10.4,21.8
+                         c-3.1,8.9-12.9,13.6-21.8,10.4C8.6,38.3,3.9,28.5,7,19.6l0,0c0.5-1.6,1.3-3.1,2.3-4.4c1.3-1.8,2.9-3.3,4.8-4.4V3.9
+                         C11.4,5,8.9,6.7,6.9,8.8c-9.1,9-9.1,23.7-0.1,32.8c7.7,7.7,19.6,9.1,28.8,3.3l1.8,1.7c2.5,2.4,6.5,2.3,8.9-0.2c0,0,0.1-0.1,0.1-0.1
+                         l0,0L40.5,40.7z"/>
+                                 
+                  <clipPath id="clip-path">
+                          <circle class ="circle-mask" cx="23.2" cy="24.2" r="35" stroke="none" stroke-width="3" fill="red" />
+                   </clipPath>                  
+                </svg>
+                    
+         <h3>Loading...</h3>
+      </div>
+    <header>
+        <div class="wrapper_1_3_1">
+      <a href="index.html" > <img src="img/logo.svg" alt="logo" class="logo" /></a> 
+
+        <ul class="deskmenu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><div class="dropdown" onclick="void(0)"><p class="drop" >Platform</p><div class="dropdownContent"><a href="platform.html">Looking for an architect?</a>
+            <a href="for_architects.html">Are you an architect?</a></div></div></li>
+         <!-- <li><a href="for_architects.html">For Architects</a></li> -->
+          <li><a href="our_team.html">Our team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+           </ul>
+        <button class="orange_button freeEst">
+          Get your free estimate
+        </button>
+ <svg class="menuIcon" viewBox="0 0 100 100">
+          <rect class="myrect" x="10" y="10" width="80" height="10" />
+          <rect class="myrect" x="10" y="30" width="80" height="10" />
+          <rect class="myrect" x="10" y="50" width="80" height="10" />
+        </svg>
+      </div>
+     
+      
+      </header>
+      <nav class="menu hiddenMenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="platform.html">Looking For an Architect?</a>
+             <li><a href="for_architects.html">Are You an Architect?</a></li>
+            <li><a href="our_team.html">Our team</a></li>
+            <li><a href="blog.html">Blog</a></li>  </ul>
+          <button class="orange_button freeEst">
+            Get your free estimate
+          </button>
+        </ul>
+      </nav>
+  
+    <div id="hero" class="hero wrapper_2_columns">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="lineSvg">
+          <line  pathlength="1" x1="0" y1="0" x2="100" y2="0" />
+       </svg> -->
+       <!-- <div class="blue"></div> -->
+        <svg class="drawSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1807 853.95">
+         
+          <g id="first">
+          <polygon pathlength="1" class="cls-1" points="1806 851.78 1806 530.85 1374.76 530.85 1371.88 852.95 1806 851.78"/>
+          <polygon pathlength="1" class="cls-1" points="1240.12 743.25 1240.12 852.5 1371.88 852.95 1374.76 530.85 1240.12 743.25"/>
+          <polygon pathlength="1" class="cls-1" points="1806 487.91 1806 2.5 1503.64 1.95 1503.64 483.33 1806 487.91"/>
+          <polyline pathlength="1" class="cls-1" points="1503.64 63.16 1384.84 275.8 1384.84 530.85"/>
+          <line pathlength="1" class="cls-1" x1="1674.28" y1="530.85" x2="1674.28" y2="851.78"/>
+          <line pathlength="1" class="cls-1" x1="1538.92" y1="530.85" x2="1538.92" y2="852.95"/>
+          <line pathlength="1" class="cls-1" x1="1407.16" y1="852.91" x2="1407.16" y2="530.85"/>
+          <polyline pathlength="1" class="cls-1" points="1373.48 592.22 1264.6 753.33 1264.6 852.95"/>
+          <line pathlength="1" class="cls-1" x1="1680.76" y1="2.5" x2="1678.58" y2="485.98"/>
+          <line pathlength="1" class="cls-1" x1="1541.8" y1="2.5" x2="1538.92" y2="483.86"/>
+          <polyline pathlength="1" class="cls-1" points="1503.64 20.74 1374.76 258.69 1374.76 530.85"/>
+          <line pathlength="1" class="cls-1" x1="1468.36" y1="530.85" x2="1503.64" y2="483.33"/>
+          <path class="cls-1" d="M1475.26,521.11" transform="translate(0 0.44)"/>
+          <polyline pathlength="1" class="cls-1" points="1372.87 206.07 1294.87 207.98 1297 1.95 1477 2.5 1353.88 243.18 1349.55 570.63"/>
+          <line pathlength="1" class="cls-1" x1="1388.23" y1="2.5" x2="1294.99" y2="196.74"/>
+          <line pathlength="1" class="cls-1" x1="1388.23" y1="2.5" x2="1294.99" y2="196.74"/>
+          <line pathlength="1" class="cls-1" x1="1388.23" y1="2.5" x2="1294.99" y2="196.74"/>
+          <line pathlength="1" class="cls-1" x1="1388.23" y1="2.5" x2="1294.99" y2="196.74"/>
+          <line pathlength="1" class="cls-1" x1="1388.23" y1="2.5" x2="1294.99" y2="196.74"/>
+          <line pathlength="1" class="cls-1" x1="1388.23" y1="2.5" x2="1294.99" y2="196.74"/>
+          <line pathlength="1" class="cls-1" x1="1388.23" y1="2.5" x2="1294.99" y2="196.74"/>
+          <line pathlength="1" class="cls-1" x1="1320.28" y1="2.5" x2="1320.28" y2="141.57"/>
+          <polyline pathlength="1" class="cls-1" points="1352.66 335.37 1284.04 464.25 1284.04 672.33"/>
+          <polyline pathlength="1" class="cls-1" points="1302.4 645 1302.4 474.33 1352.66 385.89"/>
+          <polyline pathlength="1" class="cls-1" points="1301.48 431.49 1234.36 431.49 1234.36 17.13 1240.12 0.44"/>
+          <polyline pathlength="1" class="cls-1" points="1267.92 0.44 1253.8 28.96 1253.8 389.73"/>
+          <line pathlength="1" class="cls-1" x1="1234.36" y1="431.49" x2="1346.68" y2="205.77"/>
+          <polyline pathlength="1" class="cls-1" points="1294.39 444.81 1136.08 444.81 1136.08 31.03 1234.36 28.96"/>
+          <polyline pathlength="1" class="cls-1" points="1135.7 99.62 1070.2 268.05 1070.2 580.29"/>
+          <line pathlength="1" class="cls-1" x1="1045.36" y1="629.13" x2="1136.08" y2="444.81"/>
+          <line pathlength="1" class="cls-1" x1="1206.28" y1="474.33" x2="1205.9" y2="852.1"/>
+          <polyline pathlength="1" class="cls-1" points="1179.28 474.33 1091.26 660.45 1089.41 851.78 1179.28 851.78 1179.28 474.33 1284.04 474.33"/>
+          <polyline pathlength="1" class="cls-1" points="1179.28 519.07 1108.6 661.89 1108.6 851.78"/>
+          <polyline pathlength="1" class="cls-1" points="1273.24 851.78 1273.24 786.45 1373.85 632.97"/>
+          <line pathlength="1" class="cls-1" x1="1240.12" y1="852.5" x2="1179.28" y2="851.78"/>
+          <polyline pathlength="1" class="cls-1" points="1089.41 851.78 920.92 851.78 920.92 708.45 1089.41 708.45"/>
+          <line pathlength="1" class="cls-1" x1="980.44" y1="708.45" x2="980.44" y2="851.78"/>
+          <line pathlength="1" class="cls-1" x1="940.12" y1="708.45" x2="940.12" y2="851.78"/>
+          <polyline pathlength="1" class="cls-1" points="920.92 715.17 877.72 824.61 877.72 851.78 920.92 851.78"/>
+          <polyline pathlength="1" class="cls-1" points="920.92 748.29 893.08 820.77 893.08 850.05"/>
+          <polyline pathlength="1" class="cls-1" points="1089.41 691.9 856.6 689.73 855.16 404.61 1045.36 404.61"/>
+          <line pathlength="1" class="cls-1" x1="980.9" y1="404.61" x2="983.32" y2="690.91"/>
+          <line pathlength="1" class="cls-1" x1="872.94" y1="689.88" x2="871.96" y2="404.61"/>
+          <polyline pathlength="1" class="cls-1" points="855.16 404.61 814.36 536.97 815.8 800.13 856.6 689.73"/>
+          <polyline pathlength="1" class="cls-1" points="855.38 448.32 827.8 541.41 827.8 765.57"/>
+          <line pathlength="1" class="cls-1" x1="885.4" y1="800.13" x2="815.8" y2="800.13"/>
+          <line pathlength="1" class="cls-1" x1="872.94" y1="689.88" x2="832.6" y2="800.13"/>
+          <polyline pathlength="1" class="cls-1" points="1043.32 385.89 888.28 385.89 887.32 99.62 1094.2 99.62 1094.2 135.33"/>
+          <line pathlength="1" class="cls-1" x1="981.41" y1="99.62" x2="980.9" y2="385.89"/>
+          <line pathlength="1" class="cls-1" x1="904.59" y1="99.62" x2="906.04" y2="385.89"/>
+          <polyline pathlength="1" class="cls-1" points="887.33 101.73 846.04 254.85 846.04 436.29"/>
+          <line pathlength="1" class="cls-1" x1="880.02" y1="404.61" x2="888.28" y2="385.89"/>
+          <line pathlength="1" class="cls-1" x1="906.04" y1="385.89" x2="896.44" y2="404.61"/>
+          <polyline pathlength="1" class="cls-1" points="887.32 156.45 858.52 258.21 858.52 404.61"/>
+          <polyline pathlength="1" class="cls-1" points="1131.86 41.81 945.4 42.69 945.4 80.13 1116.85 80.13"/>
+          <line pathlength="1" class="cls-1" x1="945.4" y1="42.69" x2="927.64" y2="96.45"/>
+          <line pathlength="1" class="cls-1" x1="945.4" y1="80.13" x2="939.64" y2="99.62"/>
+          <polyline pathlength="1" class="cls-1" points="949.42 42.67 953.56 31.03 1136.08 31.03 1045.36 262.65 1045.36 614.01 1045.36 629.13 1103.68 629.13"/>
+          <polyline pathlength="1" class="cls-1" points="846.04 260.61 812.44 260.61 814.36 525.57 817.88 525.57"/>
+          <line pathlength="1" class="cls-1" x1="827.78" y1="260.61" x2="829.24" y2="488.7"/>
+          <polyline pathlength="1" class="cls-1" points="812.44 260.61 778.84 391.17 780.76 636.93 814.36 525.57"/>
+          <line pathlength="1" class="cls-1" x1="814.36" y1="580.29" x2="796.6" y2="636.93"/>
+          <polyline pathlength="1" class="cls-1" points="811.81 313.01 791.32 395.25 791.32 599.97"/>
+          <polyline pathlength="1" class="cls-1" points="877.72 824.61 814.36 824.61 814.36 852.14 877.72 851.78"/>
+          <line pathlength="1" class="cls-1" x1="830.2" y1="824.65" x2="830.2" y2="852.1"/>
+          <polyline pathlength="1" class="cls-1" points="814.36 824.61 801.57 852.14 814.36 852.14"/>
+          <line pathlength="1" class="cls-1" x1="837.4" y1="800.13" x2="837.4" y2="824.61"/>
+          <line pathlength="1" class="cls-1" x1="852.77" y1="800.13" x2="852.77" y2="824.61"/>
+          <polyline pathlength="1" class="cls-1" points="815.01 654.69 778.84 654.69 778.84 851.78 801.57 852.14"/>
+          <line pathlength="1" class="cls-1" x1="795.64" y1="654.69" x2="795.64" y2="851.78"/>
+          <polyline pathlength="1" class="cls-1" points="778.84 654.69 750.52 759.81 750.52 852.5 778.84 851.78"/>
+          <polyline pathlength="1" class="cls-1" points="778.84 699.33 762.04 761.25 762.04 851.78"/>
+          <polyline pathlength="1" class="cls-1" points="775.96 389.73 749.56 389.73 750.52 636.93 780.76 636.93 814.91 636.93"/>
+          <polyline pathlength="1" class="cls-1" points="764.68 395.25 764.68 636.93 738.52 740.61"/>
+          <polyline pathlength="1" class="cls-1" points="749.56 396.25 722.68 513.33 722.68 740.61 750.52 636.93"/>
+          <line pathlength="1" class="cls-1" x1="722.68" y1="740.61" x2="755.65" y2="740.61"/>
+          <polyline pathlength="1" class="cls-1" points="749.53 444.81 734.2 515.97 734.2 697.71"/>
+          </g>
+          <g id="dontshow">
+          <rect class="dontShow" y="2.5" width="1806" height="849.28"/>
+          </g>
+          </svg>
+          <img src="img/hero_1-min.jpg" alt="Image of apartment complex" class="heroImg">
+        <div class="hero_text">
+        <h1 >New way to find the right architecht for any need</h1>
+        <p class="sub_title">ArchitectureQuote presents an innovative platform<br> to help you find the right architect for any type of project and get projects estimates for free!</p>
+        <button class="orange_button freeEst">
+          Get your free estimate
+        </button>
+      </div>
+      <img src="img/platform_home-min.png" alt="platform" class="hero_laptop" />
+    </div>
+    
+    <div id="cons" >
+
+      <div id="section_whatyouget" class=" wrapper_2_columns_rows ">
+          <h1 class="section_title">What you get with ArchitectureQuote</h1>
+          <h2 class="sub_title">
+            The best architects for your project in one place
+          </h2>
+        <div class="textPadding">
+          <div class="item" id="section_whatyouget_item_1">
+            <h3>Free quote</h3>
+            <p>
+              Start you project and get a free quote instantly! Create your online profile with requirements and inspirational pictures and proposals will not make you wait
+            </p>
+          </div>
+          <div class="item" id="section_whatyouget_item_2">
+            <h3>Architect match</h3>
+            <p>
+              Browse through architects portfolios, ask questions, get more insperation and find the one architect that fits your needs best
+            </p>
+          </div>
+          <div class="item" id="section_whatyouget_item_3">
+            <h3>Dream home</h3>
+            <p>
+              Once all details are discussed and contract is signed, communicate with the architect and follow the process not only on site, but online and get your dream home come true
+            </p>
+          </div>
+        </div>
+        <div class="img_wrapper">
+          <img src="img/empty-min.png" alt="laptop" class="absolute" />
+          <img src="img/form-min.png" alt="laptop" class="absolute"/>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="platform" class="backgroundWhite">
+      <div class="platformBox boxStyle wrapper_rows_1_1_2" id="section_platform">
+        <div>
+      <h1 class="section_title">The ArchitectureQuote Platform</h1>
+      <h2 class="sub_title">Real-time tool to start, follow and finalize the best deal</h2>
+    </div>
+          <div class="wrapper_4_columns">
+            <div class="icon" id="section_platform_item_1">
+              <svg
+                id="Layer_2"
+                data-name="Layer 2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 46.40312 48.46205"
+
+              >
+                <path
+                  id="Path_167"
+                  data-name="Path 166"
+                  class="cls-1"
+                  d="M25.652,9.9V43.3h2.6V18.9l3-1.4V43.3h1.8V12.1Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_164"
+                  data-name="Path 164"
+                  class="cls-1"
+                  d="M25.052,10.2l-.7.4V43.3h.7Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_165"
+                  data-name="Path 165"
+                  class="cls-1"
+                  d="M21.852,43.3h.6V11.5l-.6.3Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_163"
+                  data-name="Path 163"
+                  class="cls-1"
+                  d="M23.752,10.8l-.7.4V43.3h.7Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_169"
+                  data-name="Path 169"
+                  class="cls-1"
+                  d="M30.752,17.7l-.5.3V43.3h.5Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_170"
+                  data-name="Path 170"
+                  class="cls-1"
+                  d="M28.252,43.3h.6V18.7l-.6.2Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_168"
+                  data-name="Path 168"
+                  class="cls-1"
+                  d="M29.752,18.2l-.5.2V43.3h.5Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_16"
+                  data-name="Path 167"
+                  class="cls-1"
+                  d="M31.252,43.3h5.8V19.1l-5.8-1.6Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_171"
+                  data-name="Path 171"
+                  class="cls-1"
+                  d="M10.352,24.6l-.3.2V43.3h.3Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_172"
+                  data-name="Path 172"
+                  class="cls-1"
+                  d="M11.152,24.2l-.4.2V43.3h.4Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_173"
+                  data-name="Path 173"
+                  class="cls-1"
+                  d="M9.252,43.3h.4V24.9l-.4.2Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_174"
+                  data-name="Path 174"
+                  class="cls-1"
+                  d="M11.452,24V43.3h2.7V24.8Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_175"
+                  data-name="Path 175"
+                  class="cls-1"
+                  d="M28.252,43.3V18.9l.6-.3V2.8L19.152,0V43.3h2.7V11.8l3.8-1.9V43.3Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_177"
+                  data-name="Path 177"
+                  class="cls-1"
+                  d="M18.352.4l-.9.4V43.3h.9Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_178"
+                  data-name="Path 178"
+                  class="cls-1"
+                  d="M14.152,43.3h.9V2l-.9.4Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_176"
+                  data-name="Path 176"
+                  class="cls-1"
+                  d="M16.652,1.2l-.9.4V43.3h.9Z"
+                  transform="translate(0)"
+                />
+                <path
+                  id="Path_179"
+                  data-name="Path 179"
+                  class="cls-1"
+                  d="M40.452,40.7a23.1,23.1,0,0,0-11.6-37.9V9.2A17.1,17.1,0,1,1,7.03816,19.63914L7.052,19.6a16.70011,16.70011,0,0,1,2.3-4.4,15.49994,15.49994,0,0,1,4.8-4.4V3.9a22.3,22.3,0,0,0-7.3,4.9,23.2,23.2,0,0,0,28.7,36.1l1.8,1.7a6.3,6.3,0,0,0,8.90728-.20088q.04689-.04907.09272-.09912h0Z"
+                  transform="translate(0)"
+                />
+              </svg>
+
+              <h3>Overview</h3>
+            </div>
+            <div class="icon" id="section_platform_item_2">
+             
+              <svg
+                id="Capa_1"
+                data-name="Capa 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 202.171 218.082"
+              >
+               
+                <path
+                  d="M202.059,109.561a28.93442,28.93442,0,0,0-21.65-9.387,33.72739,33.72739,0,0,0-16.453,4.089V45.084H115.275a33.19273,33.19273,0,0,0,3.571-15.491,28.57857,28.57857,0,0,0-9.388-21.484A32.539,32.539,0,0,0,87.485,0,32.54308,32.54308,0,0,0,65.512,8.108a28.57857,28.57857,0,0,0-9.388,21.484,33.125,33.125,0,0,0,3.664,15.491H7.957v66.702l4.551-2.281a28.06644,28.06644,0,0,1,13.53-3.339,22.78008,22.78008,0,0,1,17.11,7.415,27.82048,27.82048,0,0,1,.054,35.906,22.70913,22.70913,0,0,1-17.09,7.416,29.045,29.045,0,0,1-13.633-3.256L7.956,151.43v66.652H67.432l-2.634-4.513A26.94447,26.94447,0,0,1,61,199.433a22.63108,22.63108,0,0,1,7.415-17.017,26.5674,26.5674,0,0,1,17.953-6.549,26.57529,26.57529,0,0,1,17.953,6.564,22.60943,22.60943,0,0,1,7.416,16.998,27.44105,27.44105,0,0,1-3.705,14.163l-2.565,4.488h58.489V158.909a34.09947,34.09947,0,0,0,16.453,3.983,28.75643,28.75643,0,0,0,21.567-9.387,33.82055,33.82055,0,0,0,.083-43.944Z"
+                  transform="translate(-7.956)"
+                />
+              </svg>
+              <h3>Matching</h3>
+            </div>
+            <div class="icon" id="section_platform_item_3">
+              <svg
+                id="Layer_11"
+                data-name="Layer 11"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 79.4 77.00196"
+              >
+              
+                <g id="Group_9666" data-name="Group 9666">
+                  <path
+                    id="Path_363"
+                    data-name="Path 363"
+                    d="M47.8,0C30.3,0,16.2,12.4,16.2,27.7S30.3,55.5,47.8,55.5A34.8,34.8,0,0,0,65,51a18.6,18.6,0,0,0,12,2.2,1,1,0,0,0,.8-1c-.1-.2-.2-.5-.4-.6a12.4,12.4,0,0,1-5-6.5,25.1,25.1,0,0,0,7-17.4C79.4,12.4,65.2,0,47.8,0ZM66.4,39.4H44.9V34.5H66.4Zm0-9.2H29.2V25.3H66.4Zm0-9.3H29.2V16H66.4Zm-18.6,40,3.6-.2C48.1,70.1,38.1,77,26.3,77A28.2,28.2,0,0,1,12,73.3,15.5,15.5,0,0,1,1.9,75.1a.8.8,0,0,1-.6-.8.7.7,0,0,1,.4-.5,11.1,11.1,0,0,0,4.1-5.4A21.1,21.1,0,0,1,0,53.9C0,46,4.6,39,11.5,34.8,15.2,49.7,30.1,60.9,47.8,60.9Z"
+                  />
+                </g>
+              </svg>
+              <h3>Communication</h3>
+            </div>
+            <div class="icon" id="section_platform_item_4">
+              <svg
+                id="Layer_12"
+                data-name="Layer 12"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 44 44"
+              >
+           
+                <path
+                  d="M22,0A22,22,0,1,0,44,22,21.93664,21.93664,0,0,0,22,0ZM34.7,15.1h0l-16,16.6a.90783.90783,0,0,1-.7.3.77855.77855,0,0,1-.7-.3L9.5,23.3l-.2-.2a.96667.96667,0,0,1,0-1.4l1.4-1.4a.96667.96667,0,0,1,1.4,0l.1.1,5.5,5.9a.48333.48333,0,0,0,.7,0L31.8,12.4h.1a.96667.96667,0,0,1,1.4,0l1.4,1.4A.85265.85265,0,0,1,34.7,15.1Z"
+                />
+              </svg>
+              <h3>Deal flow</h3>
+            </div>
+          </div>
+        <div class="another_color wrapper_2_columns">
+          <div class="padding3em">
+            <h3 class="titleToChange">One place for all Architecture</h3>
+            <p id="textHolderForPlatform">
+                Overview of the process helps to avoid misunderstanding and prevent mistakes. It helps to identify the ongoing state of a process to know how it can be improved. It is also a way to structure and organize the process.
+            </p>
+            <a href="platform.html"
+              ><button class="orange_button">More about AQ platform</button></a
+            >
+          </div >
+          <img class="absolute" src="img/empty-min.png" alt="platform" />
+          <img src="img/platform_home_single-min.png" alt="platform" class="absolute browser">
+
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="section_why">
+      <div class="box">
+      <h1 class="title">Why choose ArchitectureQuote</h1>
+      <div class="bubbles wrapper_4_columns">
+        <div class="items speech-bubble boxStyle grow arrow" id="section_why_item_1">
+          <svg
+            id="Layer_13"
+            data-name="Layer 13"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496.02734 512"
+          >
+            <title>hours</title>
+            <path
+              d="M475.83594,334.71484C443.10156,422.76563,357.97266,481.92188,264,481.92188,139.42578,481.92188,38.07813,380.57422,38.07813,256S139.42578,30.07813,264,30.07813A224.18238,224.18238,0,0,1,421.375,93.84766l-29.28125-2.57032-2.625,29.96485,78.81641,6.91015,6.91015-78.8164L445.23047,46.707l-2.29688,26.23828A257.74734,257.74734,0,0,0,378.793,27.10547,256.06152,256.06152,0,0,0,8,256a256.04412,256.04412,0,0,0,496.02734,89.19531Z"
+              transform="translate(-8)"
+            />
+            <path
+              d="M263.62109,98.88672c-86.63281,0-157.11328,70.48047-157.11328,157.11328s70.48047,157.11328,157.11328,157.11328S420.73438,342.63281,420.73438,256,350.25391,98.88672,263.62109,98.88672Zm60.4961,172.15234H248.94141v-107.875h30.07812v77.79688h45.09766Z"
+              transform="translate(-8)"
+            />
+          </svg>
+          <h3>Save time</h3>
+        </div>
+        <div class="items speech-bubble boxStyle" id="section_why_item_2">
+          <svg
+            id="Layer_14"
+            data-name="Layer 14"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 46.40312 48.46205"
+          >
+            <defs>
+              <style></style>
+            </defs>
+            
+            <g id="Group_627" data-name="Group 627">
+              <g id="Group_230" data-name="Group 230">
+                <g id="Group_211" data-name="Group 211">
+                  <g id="Group_209" data-name="Group 209">
+                    <g id="Group_206" data-name="Group 206">
+                      <path
+                        id="Path_136"
+                        data-name="Path 136"
+                        class="cls-1"
+                        d="M23.752,10.8l-.7.4V43.3h.7Z"
+                        transform="translate(0)"
+                      />
+                    </g>
+                    <g id="Group_207" data-name="Group 207">
+                      <path
+                        id="Path_146"
+                        data-name="Path 146"
+                        class="cls-1"
+                        d="M25.052,10.2l-.7.4V43.3h.7Z"
+                        transform="translate(0)"
+                      />
+                    </g>
+                    <g id="Group_210" data-name="Group 210">
+                      <path
+                        id="Path_166"
+                        data-name="Path 166"
+                        class="cls-1"
+                        d="M25.652,9.9V43.3h2.6V18.9l3-1.4V43.3h1.8V12.1Z"
+                        transform="translate(0)"
+                      />
+                    </g>
+                  </g>
+                  <g id="Group_217" data-name="Group 217">
+                    <g id="Group_212" data-name="Group 212">
+                      <path
+                        id="Path_17"
+                        data-name="Path 167"
+                        class="cls-1"
+                        d="M31.252,43.3h5.8V19.1l-5.8-1.6Z"
+                        transform="translate(0)"
+                      />
+                    </g>
+                    <g id="Group_216" data-name="Group 216">
+                      <g id="Group_213" data-name="Group 213">
+                        <path
+                          id="Path_186"
+                          data-name="Path 186"
+                          class="cls-1"
+                          d="M29.752,18.2l-.5.2V43.3h.5Z"
+                          transform="translate(0)"
+                        />
+                      </g>
+                      <g id="Group_214" data-name="Group 214">
+                        <path
+                          id="Path_196"
+                          data-name="Path 196"
+                          class="cls-1"
+                          d="M30.752,17.7l-.5.3V43.3h.5Z"
+                          transform="translate(0)"
+                        />
+                      </g>
+                      <g id="Group_215" data-name="Group 215">
+                        <path
+                          id="Path_107"
+                          data-name="Path 107"
+                          class="cls-1"
+                          d="M28.252,43.3h.6V18.7l-.6.2Z"
+                          transform="translate(0)"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <g id="Group_223" data-name="Group 223">
+                    <g id="Group_221" data-name="Group 221">
+                      <g id="Group_218" data-name="Group 218">
+                        <path
+                          id="Path_1711"
+                          data-name="Path 1711"
+                          class="cls-1"
+                          d="M10.352,24.6l-.3.2V43.3h.3Z"
+                          transform="translate(0)"
+                        />
+                      </g>
+                      <g id="Group_219" data-name="Group 219">
+                        <path
+                          id="Path_127"
+                          data-name="Path 127"
+                          class="cls-1"
+                          d="M11.152,24.2l-.4.2V43.3h.4Z"
+                          transform="translate(0)"
+                        />
+                      </g>
+                      <g id="Group_220" data-name="Group 220">
+                        <path
+                          id="Path_137"
+                          data-name="Path 137"
+                          class="cls-1"
+                          d="M9.252,43.3h.4V24.9l-.4.2Z"
+                          transform="translate(0)"
+                        />
+                      </g>
+                    </g>
+                    <g id="Group_222" data-name="Group 222">
+                      <path
+                        id="Path_147"
+                        data-name="Path 147"
+                        class="cls-1"
+                        d="M11.452,24V43.3h2.7V24.8Z"
+                        transform="translate(0)"
+                      />
+                    </g>
+                  </g>
+                  <g id="Group_229" data-name="Group 229">
+                    <g id="Group_224" data-name="Group 224">
+                      <path
+                        id="Path_157"
+                        data-name="Path 157"
+                        class="cls-1"
+                        d="M28.252,43.3V18.9l.6-.3V2.8L19.152,0V43.3h2.7V11.8l3.8-1.9V43.3Z"
+                        transform="translate(0)"
+                      />
+                    </g>
+                    <g id="Group_228" data-name="Group 228">
+                      <g id="Group_225" data-name="Group 225">
+                        <path
+                          id="Path_1677"
+                          data-name="Path 1677"
+                          class="cls-1"
+                          d="M16.652,1.2l-.9.4V43.3h.9Z"
+                          transform="translate(0)"
+                        />
+                      </g>
+                      <g id="Group_226" data-name="Group 226">
+                        <path
+                          id="Path_1777"
+                          data-name="Path 1777"
+                          class="cls-1"
+                          d="M18.352.4l-.9.4V43.3h.9Z"
+                          transform="translate(0)"
+                        />
+                      </g>
+                      <g id="Group_227" data-name="Group 227">
+                        <path
+                          id="Path_1788"
+                          data-name="Path 1788"
+                          class="cls-1"
+                          d="M14.152,43.3h.9V2l-.9.4Z"
+                          transform="translate(0)"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <path
+                  id="Path_197"
+                  data-name="Path 197"
+                  class="cls-1"
+                  d="M40.452,40.7a23.1,23.1,0,0,0-11.6-37.9V9.2A17.1,17.1,0,1,1,7.03816,19.63914L7.052,19.6a16.70011,16.70011,0,0,1,2.3-4.4,15.49994,15.49994,0,0,1,4.8-4.4V3.9a22.3,22.3,0,0,0-7.3,4.9,23.2,23.2,0,0,0,28.7,36.1l1.8,1.7a6.3,6.3,0,0,0,8.90728-.20088q.04689-.04907.09272-.09912h0Z"
+                  transform="translate(0)"
+                />
+              </g>
+            </svg>
+            <h3>Hassle free</h3>
+          </div>
+          <div class="items speech-bubble boxStyle" id="section_why_item_3">
+            <svg
+              id="Layer_15"
+              data-name="Layer 15"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+            >
+              <title>checked</title>
+              <path
+                d="M22,0A22,22,0,1,0,44,22,21.93664,21.93664,0,0,0,22,0ZM34.7,15.1h0l-16,16.6a.90783.90783,0,0,1-.7.3.77855.77855,0,0,1-.7-.3L9.5,23.3l-.2-.2a.96667.96667,0,0,1,0-1.4l1.4-1.4a.96667.96667,0,0,1,1.4,0l.1.1,5.5,5.9a.48333.48333,0,0,0,.7,0L31.8,12.4h.1a.96667.96667,0,0,1,1.4,0l1.4,1.4A.85265.85265,0,0,1,34.7,15.1Z"
+              />
+            </svg>
+            <h3>Better Process</h3>
+          </div>
+          <div class="items speech-bubble boxStyle" id="section_why_item_4">
+            <svg
+              id="Layer_16"
+              data-name="Layer 16"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 79.4 77.00196"
+            >
+              <title>communication</title>
+              <g id="Group_966" data-name="Group 966">
+                <path
+                  id="Path_3633"
+                  data-name="Path 3633"
+                  d="M47.8,0C30.3,0,16.2,12.4,16.2,27.7S30.3,55.5,47.8,55.5A34.8,34.8,0,0,0,65,51a18.6,18.6,0,0,0,12,2.2,1,1,0,0,0,.8-1c-.1-.2-.2-.5-.4-.6a12.4,12.4,0,0,1-5-6.5,25.1,25.1,0,0,0,7-17.4C79.4,12.4,65.2,0,47.8,0ZM66.4,39.4H44.9V34.5H66.4Zm0-9.2H29.2V25.3H66.4Zm0-9.3H29.2V16H66.4Zm-18.6,40,3.6-.2C48.1,70.1,38.1,77,26.3,77A28.2,28.2,0,0,1,12,73.3,15.5,15.5,0,0,1,1.9,75.1a.8.8,0,0,1-.6-.8.7.7,0,0,1,.4-.5,11.1,11.1,0,0,0,4.1-5.4A21.1,21.1,0,0,1,0,53.9C0,46,4.6,39,11.5,34.8,15.2,49.7,30.1,60.9,47.8,60.9Z"
+                />
+              </g>
+            </svg>
+            <h3>No obligation</h3>
+          </div>
+        </div>
+      </div>
+      <div class="click_text">
+        <h2 class="title titleToChange">Save Time</h2>
+        <p>
+            Start your project and get proposals from different architects instantly. It is free and will remain free!
+        </p>
+      </div>
+    </div>
+
+    <div id="types" >
+        <div class="gradient"> </div>
+     
+      <div class=" wrapper_2_columns_rows">
+          <h1 class="section_title">We work with all types of projects</h1>
+          <h2 class="sub_title">
+            Everything from cozy homes to large industrial projects
+          </h2>
+        <div class="textPadding">
+          <ul>
+            <li id="business" class="type">Business</li>
+            <li id="residential" class="type">Residential</li>
+            <li id="recreational" class="type">Recreational</li>
+            <li id="aestetic" class="type">Design</li>
+          </ul>
+          <h4 class="titleToChange increment" >
+            <!-- + -->
+            <span id="number_firms">312</span>
+            firms spesializing in
+            <span id="type_of_firms" >Business</span>
+            architecture
+          </h4>
+          <p id="textForTypes">
+              In a competitive environment where improvement is foremost, to hire a good architect is essential. Do you need to construct a resedential complex, a new modern hospital,a large industrial building or a family-driven brewery? We have spectialists in all of the types and they are ready to start building proposals!
+          </p>
+          <!-- <a href=""><button class="orange_button">Read more</button></a> -->
+        </div>
+        <!-- <div class="wrapper_2_columns"> -->
+        <img class="houseIcon" src="img//icons/cityscape.svg" alt="building" />
+        <!-- <img class="houseIcons" src="img/icons/buildings (1).svg"> -->
+      <!-- </div> -->
+        <h1 class="big">Business</h1>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div id="sections">
+      <div class="gradient_reverse"></div>
+      <div class="sectionWrapper shadow wrapper_2_columns">
+      
+        <div class="sectionItem users">
+            <svg version="1.1" id="Layer_17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+   
+         <path class="st0" d="M271,271h60v121h-60V271z"/>
+         <path class="st0" d="M451,392V201.8l35.3,34.7l21.3-21.1L303.3,0L94.5,215.3l21.1,21.3l35.5-34.1V392h90V241h120v151H451z M301,211
+           c-16.6,0-30-13.4-30-30s13.4-30,30-30s30,13.4,30,30C331,197.6,317.6,211,301,211z"/>
+         <path class="st0" d="M450.2,443.2l7.2,8.8H145.7l7.2-8.8L131.6,422L91,467l40.6,45l21.2-21.2l-7.2-8.8h311.7l-7.2,8.8l21.2,21.2
+           l40.6-45l-40.6-45L450.2,443.2z"/>
+         <path class="st0" d="M21.2,360.2L0,381.4L45,422l45-40.6l-21.2-21.2l-8.8,7.2V85.7l8.8,7.2L90,71.6L45,31L0,71.6l21.2,21.2l8.8-7.2
+           v281.7L21.2,360.2z"/>
+         </svg>
+        <h1>Do you need an Architect?</h1>
+        <h3>Lets start making your dream home today!</h3>
+<a href="platform.html" class="link">Read more about the platform</a>
+        <button class="orange_button freeEst">Start your project</button>
+      </div>
+      <div class="sectionItem architects">
+          <svg id="Layer_18" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393.71875 512">
+            <title>compass</title>
+            <path class="cls-1" d="M121.85938,166a75,75,0,1,0,75-75A75,75,0,0,0,121.85938,166Zm75-21.21094L218.07031,166l-21.21093,21.21094L175.64844,166Z"/>
+            <path class="cls-1" d="M368.81641,393.08594,276.99219,233.03125a104.54978,104.54978,0,0,1-50.17188,33.08594L367.73438,512l25.98437-15-25.29687-44.61719C378.75,434.125,379.5625,411.67188,368.81641,393.08594Z"/>
+            <path class="cls-1" d="M226.85938,65.89453V0h-60V65.89453a103.561,103.561,0,0,1,30-4.89453A103.5398,103.5398,0,0,1,226.85938,65.89453Z"/>
+            <path class="cls-1" d="M25.98438,512,166.89844,266.11719a104.57766,104.57766,0,0,1-50.168-33.082L24.90234,393.08594a58.7103,58.7103,0,0,0,.10157,59.80859L0,497Z"/>
+          </svg>
+        <h1>Are you an Architect?<br> Come on in!</h1>
+        <h3>Explore what ArchitectureQuote can offer you</h3>
+        <a href="for_architects.html" class="link">Read more about the platform</a>
+        <a href="https://www.dashboard.architecturequote.com/"><button class="orange_button">Start free trial</button></a>
+      </div>
+    </div>
+    </div>
+
+      
+    <div id="happyClients" >
+      <h1 class="header">Our happy clients</h1>
+    <!-- <div class="clients width100">  -->
+       <div class="carouselWrapper">
+          <section id="testimonials" class="caruselle">
+            </section>
+          </div>
+            <div class="next arrowLeft"></div>
+            <div class="next arrowRight"></div>
+          <template id="testimonialsTemplate">
+            <div class="client boxStyle">
+            <div class="userImage"></div>
+        
+                <h2 class="titleTestimonials"></h2>
+                <p class="textTestimonials"></p>
+                <div>
+          <h3 class="name"></h3> <span class="company"></span>
+          <p class="website"></p>
+        </div>
+          </div>
+        </template>
+      
+      <!-- </div>  -->
+    </div>
+
+    <div class="blogsPart">
+      <h1 class="header">Latest Blog Posts</h1>
+      
+          <section id="frontpageBlogs" class=" wrapper_2_columns">
+
+          </section>
+          <template id="blogsTemplate">
+           <div class="boxStyle">
+            <!-- <img src="" alt="" class="width100"> -->
+            <h2 class="blogTitle"></h2>
+          </div>
+          </template>
+          </div>
+
+          <footer class="backgroundColor">
+              <div>
+                <img class="width30" src="img/logo.svg" alt="logo"/>
+                <p>Danneskiold-Samsøes Allé 41
+                  <br>1434 København</p>
+                <p>info@architecturequote.com</p>
+                <div> <a href="https://twitter.com/ArchitectureQu3" target="_blank" rel="noreferrer">
+                  <img src="img/icons/twitter-logo-silhouette.svg" alt="ArchitectureQoute Twitter" rel="noreferrer"></a>
+                  <a href="https://www.linkedin.com/company/architecturequote" target="_blank" rel="noreferrer">
+                    <img src="img/icons/linkedin.svg" alt="ArchitectureQoute LinkedIn"></a>
+                    <a href="https://www.facebook.com/ArchitectureQuote/" target="_blank" rel="noreferrer">
+                      <img src="img/icons/facebook-logo-button.svg" alt="ArchitectureQoute Facebook"></a>
+              </div>
+              </div>
+              <div>
+               
+              </div>
+              <div>
+               </div>
+              <div>
+                <h4> Newsletter</h4>
+                <label for="subscribe_email"> <input type="text" aria-label="subscribe_email" name="subscribe_email" id="subscribe_email" placeholder=" Enter your Email"></label> 
+                <input type="submit" value="Submit" class="orange_button">
+                <p>Subscribe to our mailing list to receive new updates and special offers.</p>
+               </div>
+               <div class="tiny"> Icons made by Freepik from <a href="www.flaticon.com" target="_blank" rel="noreferrer">www.flaticon.com</a> </div>
+
+            </footer>
+            <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+        <script src="js/form.js"></script>
+  </body>
+</html>

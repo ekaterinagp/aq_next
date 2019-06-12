@@ -1,0 +1,25 @@
+{
+  "name": "aq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekaterinagp/aq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekaterinagp/aq/issues"
+  },
+  "homepage": "https://github.com/ekaterinagp/aq#readme",
+  "devDependencies": {
+    "jsdom": "^15.1.1",
+    "mocha": "^6.1.4",
+    "unexpected": "^11.6.0",
+    "unexpected-dom": "^4.12.1"
+  }
+}
