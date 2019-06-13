@@ -36,6 +36,15 @@ li {
   position: absolute;
 }
 
+#error-message {
+  display: block;
+  max-height: 10px;
+}
+
+#subscribe_email {
+  max-height: 20px;
+}
+
 #happyClients {
   height: auto;
   max-width: 100vw;

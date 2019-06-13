@@ -796,10 +796,32 @@ let initForm = () => {
       createFormWrapper();
     });
   });
+
+  let emailForNews = document.querySelector("input[type=email]");
   let inputSubmit = document.querySelector("input[type=submit]");
+
+  emailForNews.addEventListener("keyup", () => {
+    let inputValid = emailForNews.checkValidity();
+    if (inputValid == true) {
+      inputSubmit.disabled = false;
+      document.querySelector("#error-message").innerHTML = "";
+    }
+  });
+
+  emailForNews.addEventListener("change", () => {
+    let inputValid = emailForNews.checkValidity();
+    if (inputValid == false) {
+      document.querySelector("#error-message").innerHTML =
+        "Invalid type of email";
+    }
+  });
+
   inputSubmit.addEventListener("click", () => {
     console.log({ inputSubmit });
+
+    console.log("it is true, ");
     showAlert(document.querySelector("header"), "newsAlert");
+    emailForNews.value = null;
   });
 };
 
@@ -828,7 +850,7 @@ function showAlert(placeHolder, elementId) {
   let h2 = document.createElement("h2");
   h2.innerText = "Thank you!";
   let p = document.createElement("p");
-  p.innerText = "You will recive an email from us shortly";
+  p.innerText = "You will hear from us shortly";
   div.append(h2, p);
   placeHolder.appendChild(div);
   setTimeout(() => {

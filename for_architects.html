@@ -355,11 +355,13 @@
        </div>
       <div>
         <h4> Newsletter</h4>
-        <label for="subscribe_email"> <input type="text" name="subscribe" id="subscribe_email" placeholder=" Enter your Email"></label> 
-        <input type="submit" value="Submit" class="orange_button">
-        <p>Subscribe to our mailing list to receive new updates and special offers.</p>
-       </div>
-       <div class="tiny"> Icons made by Freepik from <a href="www.flaticon.com" target="_blank" rel="noreferrer">www.flaticon.com</a> </div>
+        <label for="subscribe_email"> </label> <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-label="subscribe_email" name="subscribe_email" id="subscribe_email" placeholder=" Enter your Email" required>
+        <span id="error-message"></span>
+         <input type="submit" value="Subscribe" class="orange_button" disabled>
+      
+         <p>Subscribe to our mailing list to receive new updates and special offers.</p>
+        </div>
+        <div class="tiny"> Icons made by Freepik from <a href="www.flaticon.com" target="_blank" rel="noreferrer">www.flaticon.com</a> </div>
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/timeline_animation.js"></script>
