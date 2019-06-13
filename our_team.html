@@ -188,11 +188,13 @@
       <a href="https://www.crocothemes.net">crocothemes.net</a></div>
      </div>
     <form action="" name="contact_form" id="contact_form" class="wrapper_2_columns">
-     <input type="text" placeholder="First Name" name="contact_firstName" id="contact_firstName">
+     <input type="text" placeholder="First Name" name="contact_firstName" id="contact_firstName" >
      <input type="text" name="contact_lastName" id="contact_lastName" placeholder="Last Name">
-     <input type="email" name="contact_email" id="contact_email" placeholder="Email Address">
-     <textarea name="text_message" id="text_message"  placeholder="Type here..."></textarea>
-     <label for="submit"><input type="submit" disabled value="Send Message" class="orange_button"></label> 
+     <span class="error-message-email-contact"></span>
+     <input type="email" name="contact_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="contact_email" placeholder="Email Address" required>
+     <span class="error-message-text-contact"></span>
+     <textarea name="text_message" id="text_message"  placeholder="Type here..." pattern=".{3,}" required></textarea>
+     <label for="submit"><input type="button" disabled value="Send Message" class="orange_button"></label> 
      
     </form>
 </div>
@@ -220,7 +222,7 @@
                 <h4> Newsletter</h4>
                 <label for="subscribe_email"> </label> <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-label="subscribe_email" name="subscribe_email" id="subscribe_email" placeholder=" Enter your Email" required>
                <span id="error-message"></span>
-                <input type="submit" value="Subscribe" class="orange_button" disabled>
+                <input type="submit" value="Subscribe" id="subscribeBtn" class="orange_button" disabled>
              
                 <p>Subscribe to our mailing list to receive new updates and special offers.</p>
                </div>
@@ -229,8 +231,9 @@
       
             <script src="js/menu.js"></script>
           <script src="js/timeline_animation.js"></script>
-          <script src="js/form.js"></script>
           <script src="js/our_team.js"></script>
+          <script src="js/form.js"></script>
+          
           
 </body>
 </html>

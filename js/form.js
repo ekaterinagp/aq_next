@@ -797,8 +797,10 @@ let initForm = () => {
     });
   });
 
-  let emailForNews = document.querySelector("input[type=email]");
-  let inputSubmit = document.querySelector("input[type=submit]");
+  let emailForNews = document.querySelector("#subscribe_email");
+  let inputSubmit = document
+    .querySelector("footer")
+    .querySelector("#subscribeBtn");
 
   emailForNews.addEventListener("keyup", () => {
     let inputValid = emailForNews.checkValidity();
@@ -822,6 +824,7 @@ let initForm = () => {
     console.log("it is true, ");
     showAlert(document.querySelector("header"), "newsAlert");
     emailForNews.value = null;
+    inputSubmit.disabled = true;
   });
 };
 

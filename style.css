@@ -36,7 +36,9 @@ li {
   position: absolute;
 }
 
-#error-message {
+#error-message,
+.error-message-email-contact,
+.error-message-text-contact {
   display: block;
   max-height: 10px;
 }
@@ -1785,7 +1787,11 @@ h1 > span {
 #contact_form {
   grid-gap: 5%;
   margin: auto;
-  grid-template-rows: 0.5fr 0.5fr 2fr 1fr;
+  grid-template-rows: 0.5fr 0.1fr 0.5fr 0.1fr 2fr;
+}
+
+#contact_form span {
+  grid-column: 1/-1;
 }
 input[type="submit"] {
   -webkit-appearance: none;
