@@ -331,44 +331,55 @@ let formItems = [
       let form = document.createElement("form");
       form.setAttribute("id", "contactForm");
       // form.setAttribute("class", "wrapper_5_rows");
+      let divWrapAll = document.createElement("div");
       let divWrap_1 = document.createElement("div");
       let labelFname = document.createElement("label");
       labelFname.setAttribute("for", "fName");
-      labelFname.innerHTML = "First name";
+      // labelFname.innerHTML = "First name";
       let inputFname = document.createElement("input");
       inputFname.setAttribute("type", "text");
       inputFname.setAttribute("id", "first_name");
+      inputFname.setAttribute("pattern", "[a-zA-Zs]{0,16}");
       inputFname.required = true;
       inputFname.placeholder = "First name";
       divWrap_1.append(labelFname, inputFname);
       let labelLname = document.createElement("label");
       labelLname.setAttribute("for", "lName");
-      labelLname.innerHTML = "Last name";
+      // labelLname.innerHTML = "Last name";
       let inputLname = document.createElement("input");
       inputLname.setAttribute("type", "text");
+      inputLname.setAttribute("pattern", "[a-zA-Zs]{0,16}");
       inputLname.setAttribute("id", "last_name");
       inputLname.placeholder = "Last name";
       let divWrap_2 = document.createElement("div");
       divWrap_2.append(labelLname, inputLname);
       let labelPhone = document.createElement("label");
       labelPhone.setAttribute("for", "phone");
-      labelPhone.innerHTML = "Phone number";
+      // labelPhone.innerHTML = "Phone number";
       let inputPhone = document.createElement("input");
       inputPhone.setAttribute("type", "tel");
       inputPhone.setAttribute("id", "phone");
+      inputPhone.setAttribute("pattern", "^[0-9-+s()]*$");
       inputPhone.placeholder = "Phone number";
       let divWrap_3 = document.createElement("div");
       divWrap_3.append(labelPhone, inputPhone);
       let labelemail = document.createElement("label");
       labelemail.setAttribute("for", "email");
-      labelemail.innerHTML = "Email";
+      // labelemail.innerHTML = "Email";
       let inputEmail = document.createElement("input");
       inputEmail.setAttribute("type", "email");
       inputEmail.setAttribute("id", "email");
+      inputEmail.setAttribute(
+        "pattern",
+        "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"
+      );
       inputEmail.placeholder = "Email";
       inputEmail.required = true;
       let divWrap_4 = document.createElement("div");
       divWrap_4.append(labelemail, inputEmail);
+      divWrapAll.append(divWrap_1, divWrap_2, divWrap_3, divWrap_4);
+      let divForCheckboxes = document.createElement("div");
+      divForCheckboxes.id = "checkBoxesDiv";
       let whatsupCheckbox = document.createElement("input");
       whatsupCheckbox.setAttribute("type", "checkbox");
       whatsupCheckbox.setAttribute("value", "whatsUp");
@@ -399,15 +410,8 @@ let formItems = [
         "I would like to receive relevant marketing materials and emails from ArchitectureQuote IVS";
       let divForNews = document.createElement("div");
       divForNews.append(newsCheckbox, pForNews);
-      form.append(
-        divWrap_1,
-        divWrap_2,
-        divWrap_3,
-        divWrap_4,
-        divForWhats,
-        divForAgree,
-        divForNews
-      );
+      divForCheckboxes.append(divForWhats, divForAgree, divForNews);
+      form.append(divWrapAll, divForCheckboxes);
       return form;
     }
   }

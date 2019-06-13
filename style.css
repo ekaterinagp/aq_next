@@ -47,6 +47,10 @@ li {
   max-height: 20px;
 }
 
+#projectDetails p {
+  height: 40px;
+}
+
 #happyClients {
   height: auto;
   max-width: 100vw;
@@ -1907,6 +1911,10 @@ svg {
   overflow: auto;
 }
 
+#checkBoxesDiv {
+  margin: 1em 0 2em 0;
+}
+
 .gridForForm {
   display: grid;
   grid-template-rows: 1fr 1fr 4fr 1fr;
@@ -1968,21 +1976,27 @@ svg {
   display: none;
 }
 #contactForm {
-  width: 60%;
+  width: 35%;
   margin: auto;
 }
-#contactForm > div:first-child,
+/* #contactForm > div:first-child,
 #contactForm > div:nth-child(2),
 #contactForm > div:nth-child(3),
 #contactForm > div:nth-child(4) {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   margin: 1em 0;
-}
+} */
 
-#contactForm label {
+/* #contactForm label {
   margin-right: 8%;
   text-align: right;
+} */
+
+#contactForm input[type="text"],
+#contactForm input[type="tel"],
+#contactForm input[type="email"] {
+  width: 100%;
 }
 
 #options {
@@ -2048,13 +2062,20 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#projectDetails,
 #buildingType {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   margin: auto;
 }
+
 #projectDetails {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+#projectDetails {
+  margin: 2% 17% 2% 18%;
   padding: 0 4em;
   width: 70%;
 }
