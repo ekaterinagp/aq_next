@@ -801,10 +801,13 @@ let initForm = () => {
   let inputSubmit = document
     .querySelector("footer")
     .querySelector("#subscribeBtn");
+    console.log(inputSubmit)
 
   emailForNews.addEventListener("keyup", () => {
     let inputValid = emailForNews.checkValidity();
-    if (inputValid == true) {
+    console.log("keyup")
+    if (inputValid === true) {
+      console.log(inputSubmit)
       inputSubmit.disabled = false;
       document.querySelector("#error-message").innerHTML = "";
     }
@@ -812,7 +815,8 @@ let initForm = () => {
 
   emailForNews.addEventListener("change", () => {
     let inputValid = emailForNews.checkValidity();
-    if (inputValid == false) {
+    if (inputValid === false) {
+    
       document.querySelector("#error-message").innerHTML =
         "Invalid type of email";
     }
@@ -847,19 +851,29 @@ function saveUserData() {
 }
 
 function showAlert(placeHolder, elementId) {
+  let divWrapper = document.createElement("div");
+  divWrapper.setAttribute("class", "alertWrapper");
   let div = document.createElement("div");
   div.setAttribute("class", "alert");
   div.setAttribute("id", elementId);
+  let closeSpan = document.createElement("span");
+  closeSpan.innerText="X";
+  closeSpan.setAttribute("class", "close");
   let h2 = document.createElement("h2");
   h2.innerText = "Thank you!";
   let p = document.createElement("p");
   p.innerText = "You will hear from us shortly";
-  div.append(h2, p);
-  placeHolder.appendChild(div);
+  div.append( closeSpan, h2, p);
+  divWrapper.append(div);
+  placeHolder.appendChild(divWrapper);
+  closeSpan.addEventListener("click", ()=>{
+    document.querySelector(".alertWrapper").remove();
+  })
   setTimeout(() => {
     console.log({ elementId });
     if (document.querySelector("#" + elementId)) {
-      document.querySelector("#" + elementId).remove();
+      // document.querySelector("#" + elementId).remove();
+      document.querySelector(".alertWrapper").remove();
     }
   }, 5000);
 }

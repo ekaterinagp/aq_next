@@ -29,18 +29,18 @@ li {
   font-family: "Montserrat", sans-serif;
 }
 
-.alert {
-  width: 60%;
-  height: auto;
-  background-color: white;
-  position: absolute;
-}
+
 
 #error-message,
 .error-message-email-contact,
 .error-message-text-contact {
   display: block;
   max-height: 10px;
+  margin: .5em 0;
+  min-height: 10px;
+  padding-right: 3em;
+  font-size: .8em;
+  color: #ef6461;
 }
 
 #subscribe_email {
@@ -230,7 +230,6 @@ svg.menuIcon rect:nth-child(3) {
 header {
   max-width: 100vw;
   padding: 0 2em;
-  height: 10vh;
   width: 100%;
   background-color: white;
   color: #2c2e3e;
@@ -240,7 +239,7 @@ header {
   text-align: right;
 }
 header ul {
-  margin: 0;
+  margin: auto 0;
 }
 
 header li {
@@ -1798,7 +1797,7 @@ input[type="submit"] {
 }
 #contact_form input[type="text"],
 #contact_form input[type="email"] {
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -1873,7 +1872,19 @@ svg {
   padding: 0 5% 0 0;
   font-family: "Poppins", sans-serif;
 }
-
+/*  Alert modal */
+.alert {
+  border-radius: 10px;
+  width: 60%;
+  right:0;
+  left:0;
+  padding:1em;
+  margin:10% auto;
+  height: auto;
+  background-color: white;
+  position: fixed;
+  text-align:center;
+}
 /*  Free estimation form  */
 .close {
   cursor: pointer;
@@ -1882,7 +1893,7 @@ svg {
   margin: 5%;
   right: 0;
 }
-.formWrapper {
+.formWrapper, .alertWrapper {
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -1902,7 +1913,7 @@ svg {
   width: 80vw;
   max-height: 100%;
   background-color: white;
-  margin: 0 10vw;
+  margin: 1% 10vw;
   padding: 0 5% 2%;
   overflow: auto;
 }
@@ -2048,10 +2059,15 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#projectDetails,
-#buildingType {
+#projectDetails {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: auto;
+}
+
+#buildingType{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   margin: auto;
 }
 #projectDetails {
@@ -2529,16 +2545,19 @@ img#platform {
 /* .required{
   background:red;
 } */
-input:valid {
+/* input:valid {
   border-bottom: 1px solid rgba(40, 224, 138, 0.3);
 }
 input:invalid {
   border-bottom: 1px solid rgba(145, 36, 36, 0.3);
-}
-#contactForm div {
+} */
+#contactForm div, .validSymbol, .invalidSymbol {
   position: relative;
 }
-
+#projectDetails .validSymbol::after, 
+#projectDetails .invalidSymbol::after{
+  top:inherit;
+}
 .validSymbol::after {
   content: "✓";
   position: absolute;
@@ -2604,6 +2623,7 @@ input:invalid {
   }
 }
 @media only screen and (min-height: 1000px) and (max-width: 1366px) {
+ 
   header .orange_button {
     margin: auto;
   }
@@ -2714,6 +2734,16 @@ input:invalid {
   }
 } */
 @media only screen and (max-width: 1050px) {
+  #projectType .btnRadio {
+    height: 20vh;
+}
+#projectType .imgForm{
+  height:45%;
+}
+#buildingType .btnRadio{
+  height:10vh;
+}
+
   .drawSvg,
   .heroImg {
     display: none;
@@ -2759,9 +2789,9 @@ input:invalid {
   .next {
     top: 20vh;
   }
-  .platformBox {
+  /* .platformBox {
     height: 54vh;
-  }
+  } */
   .wrapper_1_3_1 {
     grid-template-columns: 0.5fr 1.5fr 0.8fr;
     max-width: 100vw;
@@ -2847,7 +2877,7 @@ input:invalid {
   #better,
   #section_whatyouget,
   .network,
-  #platform,
+  /* #platform, */
   .hero,
   .faq {
     height: auto;
@@ -2957,9 +2987,9 @@ margin-bottom: -5em;
     height: 25vh;
   }
   #section_platform .absolute {
-    top: 22em;
-    right: -10em;
-    width: 80%;
+    top: 16em;
+    /* right: 0; */
+    width: 60%;
   }
   .platformBox > .wrapper_4_columns {
     width: auto;
@@ -3169,6 +3199,11 @@ margin-bottom: -5em;
   .wf #platform {
     overflow: visible;
   }
+  /*FORM  */
+  #projectType .btnRadio{
+    height:30vh;
+  }
+ 
 }
 
 @media only screen and (max-width: 600px) {
@@ -3425,6 +3460,7 @@ margin-bottom: -5em;
   /* frontpage */
 
   .hero {
+      width:auto;
     overflow: initial;
     background-position: 25%;
     margin-bottom: 0;
@@ -3814,9 +3850,36 @@ margin-bottom: -5em;
   #forMore {
     height: 60vh;
   }
+  /* FORM */
+  #projectType .btnRadio{
+    height:21vh;
+  }
+  .btnRadio{
+    padding:.5em;
+  }
+  #buildingType{
+    grid-template-columns: 1fr 1fr;
+  }
+ input:checked + .btnRadio:before {
+    margin: 5% auto;
+  }
+ .imgForm{
+   display:none;
+  }
+  .alert{
+    width:80%;
+    margin: 30% auto;
+  }
+  #form{
+    margin:5% 5vw;
+    width:90vw;
+  }
 }
 
 @media only screen and (max-width: 400px) {
+  #projectType .btnRadio{
+    height:20vh;
+  }
   .textPadding {
     margin: 2em;
   }
@@ -3887,8 +3950,15 @@ margin-bottom: -5em;
   .textOnImage {
     padding: 1em;
   }
+  #projectType .btnRadio{
+    height:26vh;
+  }
+ 
 }
 @media only screen and (max-width: 320px) {
+  #projectType .btnRadio{
+    height:25vh;
+  }
   .divItemsForHeight {
     height: 85vh;
   }
