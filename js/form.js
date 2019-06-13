@@ -805,9 +805,7 @@ let initForm = () => {
 
   emailForNews.addEventListener("keyup", () => {
     let inputValid = emailForNews.checkValidity();
-    console.log("keyup")
     if (inputValid === true) {
-      console.log(inputSubmit)
       inputSubmit.disabled = false;
       document.querySelector("#error-message").innerHTML = "";
     }
@@ -816,8 +814,7 @@ let initForm = () => {
   emailForNews.addEventListener("change", () => {
     let inputValid = emailForNews.checkValidity();
     if (inputValid === false) {
-    
-      document.querySelector("#error-message").innerHTML =
+          document.querySelector("#error-message").innerHTML =
         "Invalid type of email";
     }
   });
