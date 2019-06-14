@@ -3227,7 +3227,9 @@ margin-bottom: -5em;
   #projectDetails .invalidSymbol::after{
     right:0;
   }
- 
+  #contactForm {
+    width:50%
+  }
 }
 
 @media only screen and (max-width: 600px) {
