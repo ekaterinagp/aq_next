@@ -54,7 +54,11 @@ const init = () => {
   });
 
   submitButton.addEventListener("click", () => {
-    showAlert(document.querySelector("header"), "contactFormID");
+    showAlert(
+      document.querySelector("header"),
+      "contactFormID",
+      "You will hear from us shortly!"
+    );
     document.querySelector("#text_message").value = "";
     inputEmail.value = "";
     document.querySelector("#contact_firstName").value = "";

@@ -504,7 +504,11 @@ let nextElement = questionText => {
       closeForm();
     });
     submitBtn.addEventListener("click", () => {
-      showAlert(document.querySelector("header"), "formAlert");
+      showAlert(
+        document.querySelector("header"),
+        "formAlert",
+        "You will get email with your free estimate shortly!"
+      );
     });
     document.querySelector("#buttonsForm").appendChild(submitBtn);
     listenerForInput("#first_name", "name");
@@ -532,12 +536,9 @@ let nextElement = questionText => {
     });
     document.querySelector("#contactForm").addEventListener("change", () => {
       if (
-        (document.querySelector("#gdpr").checked &&
-          userAnswers.name &&
-          userAnswers.phone) ||
-        (document.querySelector("#gdpr").checked &&
-          userAnswers.name &&
-          userAnswers.email)
+        document.querySelector("#gdpr").checked &&
+        document.querySelector("#first_name").value &&
+        document.querySelector("#email").checkValidity() == true
       ) {
         submitBtn.disabled = false;
         submitBtn.addEventListener("click", () => {
@@ -805,7 +806,7 @@ let initForm = () => {
   let inputSubmit = document
     .querySelector("footer")
     .querySelector("#subscribeBtn");
-    console.log(inputSubmit)
+  console.log(inputSubmit);
 
   emailForNews.addEventListener("keyup", () => {
     let inputValid = emailForNews.checkValidity();
@@ -818,7 +819,7 @@ let initForm = () => {
   emailForNews.addEventListener("change", () => {
     let inputValid = emailForNews.checkValidity();
     if (inputValid === false) {
-          document.querySelector("#error-message").innerHTML =
+      document.querySelector("#error-message").innerHTML =
         "Invalid type of email";
     }
   });
@@ -827,7 +828,11 @@ let initForm = () => {
     console.log({ inputSubmit });
 
     console.log("it is true, ");
-    showAlert(document.querySelector("header"), "newsAlert");
+    showAlert(
+      document.querySelector("header"),
+      "newsAlert",
+      "You are succesfully subscribed for our newsletters!"
+    );
     emailForNews.value = null;
     inputSubmit.disabled = true;
   });
@@ -851,25 +856,25 @@ function saveUserData() {
   console.log({ userAnswers });
 }
 
-function showAlert(placeHolder, elementId) {
+function showAlert(placeHolder, elementId, textForAlert) {
   let divWrapper = document.createElement("div");
   divWrapper.setAttribute("class", "alertWrapper");
   let div = document.createElement("div");
   div.setAttribute("class", "alert");
   div.setAttribute("id", elementId);
   let closeSpan = document.createElement("span");
-  closeSpan.innerText="X";
+  closeSpan.innerText = "X";
   closeSpan.setAttribute("class", "close");
   let h2 = document.createElement("h2");
   h2.innerText = "Thank you!";
   let p = document.createElement("p");
-  p.innerText = "You will hear from us shortly";
-  div.append( closeSpan, h2, p);
+  p.innerText = textForAlert;
+  div.append(closeSpan, h2, p);
   divWrapper.append(div);
   placeHolder.appendChild(divWrapper);
-  closeSpan.addEventListener("click", ()=>{
+  closeSpan.addEventListener("click", () => {
     document.querySelector(".alertWrapper").remove();
-  })
+  });
   setTimeout(() => {
     console.log({ elementId });
     if (document.querySelector("#" + elementId)) {
