@@ -1,6 +1,6 @@
 "use strict";
 
-let slide = 0;
+// let slide = 0;
 window.addEventListener("load", () => {
   init();
 });
