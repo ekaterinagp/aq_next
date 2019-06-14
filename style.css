@@ -2573,7 +2573,6 @@ input:invalid {
 #projectDetails .validSymbol::after, 
 #projectDetails .invalidSymbol::after{
   top:inherit;
-  right:7em;
 }
 .validSymbol::after {
   content: "✓";
@@ -3223,10 +3222,10 @@ margin-bottom: -5em;
   #projectType .btnRadio{
     height:30vh;
   }
-  #projectDetails .validSymbol::after, 
+  /* #projectDetails .validSymbol::after, 
   #projectDetails .invalidSymbol::after{
     right:0;
-  }
+  } */
   #contactForm {
     width:50%
   }

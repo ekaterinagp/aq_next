@@ -791,7 +791,10 @@ let createFormWrapper = () => {
   document.querySelector("body").appendChild(formWrapper);
   openForm(formWrapper);
   closeSpan.addEventListener("click", closeForm);
+ 
+  
 };
+
 
 let initForm = () => {
   let startProjectBtns = document.querySelectorAll(".freeEst");
@@ -799,6 +802,13 @@ let initForm = () => {
     button.addEventListener("click", () => {
       createFormWrapper();
     });
+    window.addEventListener("click", (event)=>{
+      if (event.target == document.querySelector(".formWrapper")) {
+        // modal.style.display = "none";
+        closeForm();
+      }
+  
+  })
   });
 
   let emailForNews = document.querySelector("#subscribe_email");
@@ -870,6 +880,12 @@ function showAlert(placeHolder, elementId) {
   closeSpan.addEventListener("click", ()=>{
     document.querySelector(".alertWrapper").remove();
   })
+  window.addEventListener("click", (event)=>{
+    if (event.target == document.querySelector(".alertWrapper")) {
+      document.querySelector(".alertWrapper").remove();
+    }
+
+})
   setTimeout(() => {
     console.log({ elementId });
     if (document.querySelector("#" + elementId)) {
@@ -878,3 +894,5 @@ function showAlert(placeHolder, elementId) {
     }
   }, 5000);
 }
+
+
