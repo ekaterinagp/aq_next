@@ -13,14 +13,14 @@ const createButtonForForm = (textStr, additionalClass) => {
   return button;
 };
 
-const changeSrc = (slideShow, imgArray) => {
-  for (let i = 0; i < imgArray.length; i++) {
-    slideShow.src = imgArray[i].num;
-    if (i > imgArray.length) {
-      i = 0;
-    }
-  }
-};
+// const changeSrc = (slideShow, imgArray) => {
+//   for (let i = 0; i < imgArray.length; i++) {
+//     slideShow.src = imgArray[i].num;
+//     if (i > imgArray.length) {
+//       i = 0;
+//     }
+//   }
+// };
 
 //creates a simple above-the-fold with a background image, h1 and subtitle from WP
 const createAboveTheFold = (parts, img, i) => {
