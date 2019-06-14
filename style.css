@@ -3408,7 +3408,7 @@ margin-bottom: -5em;
   .timelineWrapper:focus .timelineText,
   .timelineWrapper:active .timelineText {
     position: initial;
-    background: rgba(255, 255, 255, 0.8);
+    background: #ef6461;
     border-radius: 5px;
     width: 50%;
     font-size: 1em;
