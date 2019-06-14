@@ -2782,10 +2782,7 @@ input:invalid {
 #projectDetails{
   padding:0;
 }
-#projectDetails .validSymbol::after, 
-#projectDetails .invalidSymbol::after{
-  right:0;
-}
+
   .drawSvg,
   .heroImg {
     display: none;
@@ -3262,6 +3259,10 @@ margin-bottom: -5em;
   #contactForm {
     width:50%
   }
+  #projectDetails .validSymbol::after, 
+#projectDetails .invalidSymbol::after{
+  right:0;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -3932,6 +3933,10 @@ margin-bottom: -5em;
     margin:5% 5vw;
     width:90vw;
   }
+  #projectDetails .validSymbol::after, 
+#projectDetails .invalidSymbol::after{
+  right:8em;
+}
 }
 
 @media only screen and (max-width: 400px) {
@@ -4047,4 +4052,8 @@ margin-bottom: -5em;
   .hero {
     height: 100vh;
   }
+  #projectDetails .validSymbol::after, 
+#projectDetails .invalidSymbol::after{
+  right:5em;
+}
 }
