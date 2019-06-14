@@ -507,7 +507,7 @@ let nextElement = questionText => {
       showAlert(
         document.querySelector("header"),
         "formAlert",
-        "You will get email with your free estimate shortly!"
+        "You will get an email with your free estimate shortly!"
       );
     });
     document.querySelector("#buttonsForm").appendChild(submitBtn);
@@ -872,17 +872,20 @@ function showAlert(placeHolder, elementId, textForAlert) {
   let div = document.createElement("div");
   div.setAttribute("class", "alert");
   div.setAttribute("id", elementId);
-  let closeSpan = document.createElement("span");
-  closeSpan.innerText = "X";
-  closeSpan.setAttribute("class", "close");
+  let okBtn = document.createElement("button");
+  okBtn.innerText = "OK";
+  okBtn.setAttribute("class", "orange_button");
+  let checkDiv =document.createElement("div");
+  checkDiv.innerText = "✓";
+  checkDiv.setAttribute("class", "alertCheck");
   let h2 = document.createElement("h2");
   h2.innerText = "Thank you!";
   let p = document.createElement("p");
   p.innerText = textForAlert;
-  div.append(closeSpan, h2, p);
+  div.append( checkDiv, h2, p, okBtn);
   divWrapper.append(div);
   placeHolder.appendChild(divWrapper);
-  closeSpan.addEventListener("click", () => {
+  okBtn.addEventListener("click", () => {
     document.querySelector(".alertWrapper").remove();
   })
   window.addEventListener("click", (event)=>{
