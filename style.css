@@ -40,7 +40,7 @@ li {
   min-height: 10px;
   padding-right: 3em;
   font-size: .8em;
-  color: rgba(145, 36, 36, 0.8);
+  color:#ef6461;
 }
 
 #subscribe_email {
@@ -3408,7 +3408,7 @@ margin-bottom: -5em;
   .timelineWrapper:focus .timelineText,
   .timelineWrapper:active .timelineText {
     position: initial;
-    background: #ef6461;
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     width: 50%;
     font-size: 1em;
