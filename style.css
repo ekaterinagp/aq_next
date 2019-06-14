@@ -2592,6 +2592,7 @@ input:invalid {
 #projectDetails .validSymbol::after, 
 #projectDetails .invalidSymbol::after{
   top:inherit;
+  right:5em;
 }
 .validSymbol::after {
   content: "✓";
@@ -2781,7 +2782,10 @@ input:invalid {
 #projectDetails{
   padding:0;
 }
-
+#projectDetails .validSymbol::after, 
+#projectDetails .invalidSymbol::after{
+  right:0;
+}
   .drawSvg,
   .heroImg {
     display: none;
