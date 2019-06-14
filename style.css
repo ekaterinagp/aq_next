@@ -2075,14 +2075,14 @@ input:checked + .slider:before {
 
 #projectDetails {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr;
   /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   margin: auto;
 }
 
 #buildingType{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  grid-template-columns: 2fr 2fr 2fr 2fr;
   margin: auto;
 }
 #projectDetails {
@@ -2573,6 +2573,7 @@ input:invalid {
 #projectDetails .validSymbol::after, 
 #projectDetails .invalidSymbol::after{
   top:inherit;
+  right:7em;
 }
 .validSymbol::after {
   content: "✓";
@@ -2758,6 +2759,9 @@ input:invalid {
 }
 #buildingType .btnRadio{
   height:10vh;
+}
+#projectDetails{
+  padding:0;
 }
 
   .drawSvg,
@@ -3219,7 +3223,13 @@ margin-bottom: -5em;
   #projectType .btnRadio{
     height:30vh;
   }
- 
+  #projectDetails .validSymbol::after, 
+  #projectDetails .invalidSymbol::after{
+    right:0;
+  }
+  #contactForm {
+    width:50%
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -3877,7 +3887,7 @@ margin-bottom: -5em;
     grid-template-columns: 1fr 1fr;
   }
  input:checked + .btnRadio:before {
-    margin: 5% auto;
+    margin: 10% auto;
   }
  .imgForm{
    display:none;
