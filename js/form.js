@@ -881,7 +881,7 @@ function showAlert(placeHolder, elementId) {
     document.querySelector(".alertWrapper").remove();
   })
   window.addEventListener("click", (event)=>{
-    if (event.target == document.querySelector(".alertWrapper")) {
+    if (event.target == document.querySelector(".alertWrapper")) {i
       document.querySelector(".alertWrapper").remove();
     }
 
