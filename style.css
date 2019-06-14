@@ -40,7 +40,7 @@ li {
   min-height: 10px;
   padding-right: 3em;
   font-size: .8em;
-  color: #ef6461;
+  color: rgba(145, 36, 36, 0.3);
 }
 
 #subscribe_email {
@@ -2069,11 +2069,11 @@ svg {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #ef6461;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #ef6461;
 }
 
 input:checked + .slider:before {
@@ -2128,17 +2128,18 @@ input:checked + .btnRadio:before {
   left: 0;
   right: 0;
   margin: 30% auto;
-  font-size: 1.5em;
+  color: white;
+  padding: 0 .6em;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: white;
+  background: #ef6461;
+  position: absolute;
+  margin: auto;
   width: 2em;
   height: 2em;
+  font-size: 1.5em;
   line-height: 2em;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  border: 2px solid white;
-  line-height: 1em;
-  color: white;
-  padding: 0.5em;
-  box-sizing: border-box;
 }
 
 /*   FAQ PAGE   */
