@@ -403,3 +403,109 @@ const sellingPointsForBusiness = (parts, i) => {
   document.querySelector(".wrapper").append(divHolder);
   sectionOverview();
 };
+
+// // timeline
+
+let timelineAnimation = () => {
+  let tl = new TimelineMax();
+  tl.staggerFromTo(
+    ".timelineWrapper",
+    0.06,
+    {
+      scale: 1.2,
+      opacity: 0,
+      skewY: 15
+    },
+    { scale: 1, opacity: 1, skewY: 0, ease: Power1.easeInOut },
+    0.05
+  ).staggerFromTo(
+    ".timelineContent",
+    0.06,
+    {
+      opacity: 0
+    },
+    {
+      opacity: 1
+    },
+    0.05
+  );
+};
+
+let checkIfInView = () => {
+  let element = document.querySelector(".timelineWrapper");
+  let elementHeight = element.clientHeight;
+
+  // listen for scroll event and call animate function
+  document.addEventListener("scroll", () => {
+    console.log("scrolling");
+    animate();
+  });
+
+  let inView = () => {
+    let windowHeight = window.innerHeight;
+
+    let scrollY = window.scrollY || window.pageYOffset;
+
+    let scrollPosition = scrollY + windowHeight;
+
+    let elementPosition =
+      element.getBoundingClientRect().top + scrollY + elementHeight;
+
+    if (scrollPosition > elementPosition) {
+      return true;
+      // console.log("true");
+    }
+    // console.log("false");
+    return false;
+  };
+
+  // animate element when it is in view
+
+  // Set animation running to false
+  let isInViewAnimationRunning = false;
+  let animate = () => {
+    document.querySelector(".loaderWrapper").classList.add("hideLoader");
+    // Only go further if no animation is running
+    if (!isInViewAnimationRunning) {
+      // console.log("it's not in view");
+      // is element in view?
+      let isInView = inView();
+      // If element is in view, go ahead and start animation and set animation is running to true, to avoid starting animation over and over
+      if (isInView) {
+        // console.log("it's in view");
+        isInViewAnimationRunning = true;
+        timelineAnimation();
+      }
+    }
+  };
+};
+
+//MENU
+let menuOpen = false;
+const menuIcon = document.querySelector(".menuIcon");
+const menu = document.querySelector(".menu");
+const bars = menuIcon.querySelectorAll("rect");
+let menuLinks = document.querySelectorAll(".menu>ul>li");
+const header = document.querySelector("header");
+// let dropdown = document.querySelector(".dropdown-content");
+menuIcon.addEventListener("click", () => {
+  // console.log("menu clicked")
+  toggleMenu();
+});
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    toggleMenu;
+  });
+});
+// Link clicked menu closed
+
+let toggleMenu = () => {
+  // console.log("oopen");
+  menuOpen = !menuOpen;
+  bars[0].classList.toggle("rotateDown");
+  bars[1].classList.toggle("fadeOut");
+  bars[2].classList.toggle("rotateUp");
+  menu.classList.toggle("hiddenMenu");
+};
+
+//MENU ends
