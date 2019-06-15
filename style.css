@@ -52,7 +52,7 @@ li {
 }
 
 #happyClients {
-  height: auto;
+  /* height: 90vh; */
   max-width: 100vw;
   overflow: hidden;
 }
@@ -1120,7 +1120,7 @@ fill:#ef6461;
 .caruselle {
   transform-style: preserve-3d;
   width: 70%;
-  height: 60%;
+  /* height: 60%; */
   text-align: center;
   margin: 1em auto 10%;
 }
@@ -1161,7 +1161,7 @@ fill:#ef6461;
   /* position: absolute; */
   /* top: 7vh; */
   width: 100%;
-  /* height:100%; */
+  height:45vh;
   margin: 5em auto 0;
   padding: 5% 8%;
   z-index: 100;
@@ -2749,9 +2749,15 @@ input:invalid {
     height: 80%;
     grid-template-rows: 0.3fr 0.1fr 1fr;
   }
-  .caruselle {
-    height: 30vh;
+  .client {
+    height:20em;
   }
+  /* .caruselle {
+    height: 30vh;
+  } */
+  /* #happyClients{
+    height:55vh;
+  } */
 }
 /* @media only screen and (max-width: 1200px) {
   .timelineWrapper,
@@ -2793,9 +2799,9 @@ input:invalid {
     margin: 3em 0 0;
   }
 
-  .caruselle {
+  /* .caruselle {
     height: 40vh;
-  }
+  } */
   .big,
   .line {
     display: none;
@@ -2826,7 +2832,7 @@ input:invalid {
     height: auto; */
   /* } */
   .next {
-    top: 20vh;
+    top: 30vh;
   }
   /* .platformBox {
     height: 54vh;
@@ -2908,6 +2914,12 @@ input:invalid {
   .houseIcon {
     margin: 0;
   }
+  .client {
+    height:20em;
+  }
+  /* #happyClients{
+    height:75vh;
+  } */
 }
 @media only screen and (max-width: 768px) {
   .logo {
@@ -3076,6 +3088,9 @@ margin-bottom: -5em;
   .blogsPart {
     margin: 0 auto;
   }
+  /* #happyClients{
+    height:55vh;
+  } */
   /*  Blogs  */
 
   #frontpageBlogs {
@@ -3266,9 +3281,9 @@ margin-bottom: -5em;
 }
 
 @media only screen and (max-width: 600px) {
-  .caruselle {
+  /* .caruselle {
     height: 60vh;
-  }
+  } */
   /* WIREFRAMES */
   #businessPage .heroWireframe > .hero_text,
   #healthcarePage .heroWireframe > .hero_text,
@@ -3643,13 +3658,19 @@ margin-bottom: -5em;
   }
 
   /*  TESTIMONIALS  */
+  /* #happyClients{
+    height:80vh;
+  } */
+  .client {
+    height:30em;
+  }
   .userImage {
     top: -4em;
     width: 22vw;
     height: 22vw;
   }
   .carouselWrapper {
-    height: 70vh;
+    /* height: 70vh; */
     width: auto;
   }
   .arrowRight {
@@ -3993,7 +4014,7 @@ margin-bottom: -5em;
     font-size: 0.8em;
   }
   .carouselWrapper {
-    height: 80vh;
+    /* height: 80vh; */
   }
 
   #happyClients,
@@ -4016,7 +4037,9 @@ margin-bottom: -5em;
   #projectType .btnRadio{
     height:26vh;
   }
- 
+  .client {
+    height: 28em;
+  }
 }
 @media only screen and (max-width: 320px) {
   #projectType .btnRadio{
@@ -4030,6 +4053,9 @@ margin-bottom: -5em;
   }
   .caruselle {
     margin: 1em auto;
+  }
+  .client {
+    height: 23em;
   }
   .pros {
     height: 70vh;
