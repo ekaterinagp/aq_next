@@ -548,7 +548,7 @@ let nextElement = questionText => {
     });
   }
 };
-let listenerforValidity = (inputName, inputType) => {
+let listenerforValidity = inputName => {
   let input = document.querySelector(inputName);
   input.addEventListener("blur", () => {
     input.parentElement.className = "";
@@ -792,10 +792,7 @@ let createFormWrapper = () => {
   document.querySelector("body").appendChild(formWrapper);
   openForm(formWrapper);
   closeSpan.addEventListener("click", closeForm);
- 
-  
 };
-
 
 let initForm = () => {
   let startProjectBtns = document.querySelectorAll(".freeEst");
@@ -803,13 +800,12 @@ let initForm = () => {
     button.addEventListener("click", () => {
       createFormWrapper();
     });
-    window.addEventListener("click", (event)=>{
+    window.addEventListener("click", event => {
       if (event.target == document.querySelector(".formWrapper")) {
         // modal.style.display = "none";
         closeForm();
       }
-  
-  })
+    });
   });
 
   let emailForNews = document.querySelector("#subscribe_email");
@@ -823,6 +819,8 @@ let initForm = () => {
     if (inputValid === true) {
       inputSubmit.disabled = false;
       document.querySelector("#error-message").innerHTML = "";
+    } else {
+      inputSubmit.disabled = true;
     }
   });
 
@@ -875,25 +873,24 @@ function showAlert(placeHolder, elementId, textForAlert) {
   let okBtn = document.createElement("button");
   okBtn.innerText = "OK";
   okBtn.setAttribute("class", "orange_button");
-  let checkDiv =document.createElement("div");
+  let checkDiv = document.createElement("div");
   checkDiv.innerText = "✓";
   checkDiv.setAttribute("class", "alertCheck");
   let h2 = document.createElement("h2");
   h2.innerText = "Thank you!";
   let p = document.createElement("p");
   p.innerText = textForAlert;
-  div.append( checkDiv, h2, p, okBtn);
+  div.append(checkDiv, h2, p, okBtn);
   divWrapper.append(div);
   placeHolder.appendChild(divWrapper);
   okBtn.addEventListener("click", () => {
     document.querySelector(".alertWrapper").remove();
-  })
-  window.addEventListener("click", (event)=>{
-    if (event.target == document.querySelector(".alertWrapper")) {i
+  });
+  window.addEventListener("click", event => {
+    if (event.target == document.querySelector(".alertWrapper")) {
       document.querySelector(".alertWrapper").remove();
     }
-
-})
+  });
   setTimeout(() => {
     console.log({ elementId });
     if (document.querySelector("#" + elementId)) {
@@ -902,5 +899,3 @@ function showAlert(placeHolder, elementId, textForAlert) {
     }
   }, 5000);
 }
-
-

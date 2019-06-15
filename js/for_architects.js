@@ -8,7 +8,7 @@ speechBubbles.forEach(bubble => {
   bubble.addEventListener("click", () => {
     // console.log(bubble);
     clearAllItemsStyle(speechBubbles, "arch_projects");
-    applyFill(bubble);
+    applyFill(bubble, "arch_projects");
     changeText(bubble, arch_projects);
     shrinkRemoveArrow();
     growAddArrow(bubble);
@@ -23,10 +23,10 @@ speechBubbles.forEach(bubble => {
   });
 });
 
-const applyFill = item => {
-  item.querySelector("svg").style.fill = "#ef6461";
-  item.querySelector("h3").style.color = "#ef6461";
-};
+// const applyFill = item => {
+//   item.querySelector("svg").style.fill = "#ef6461";
+//   item.querySelector("h3").style.color = "#ef6461";
+// };
 const changeText = (item, section) => {
   let textDiv = section.querySelector("p");
   let title = section.querySelector("h2");
@@ -57,14 +57,14 @@ const changeText = (item, section) => {
     removeAnimationClass(title, "textAnimation");
   });
 };
-const removeAnimationClass = (item, classToRemove) => {
-  item.classList.remove(classToRemove);
-};
+// const removeAnimationClass = (item, classToRemove) => {
+//   item.classList.remove(classToRemove);
+// };
 
-const growAddArrow = box => {
-  box.classList.add("arrow");
-  box.classList.add("grow");
-};
+// const growAddArrow = box => {
+//   box.classList.add("arrow");
+//   box.classList.add("grow");
+// };
 const shrinkRemoveArrow = () => {
   speechBubbles.forEach(bubble => {
     bubble.classList.remove("arrow");
@@ -72,50 +72,50 @@ const shrinkRemoveArrow = () => {
   });
 };
 
-let startSvgAnimation = () => {
-  let title = document.querySelector(".hero_text>h1");
-  let subTitle = document.querySelector(".hero_text>p");
-  title.classList.add("textAnimation");
-  subTitle.classList.add("textAnimation");
-  let svg = document.querySelector(".drawSvg");
-  let drawFirst = document.querySelector("#first").children;
-  // let n = 0;
-  svg.style.visibilty = "initial;";
-  // console.log(drawFirst);
-  for (let i = 0; i < drawFirst.length; i++) {
-    drawFirst[i].classList.add("draw");
-    // drawFirst[i].style.animationDelay = (n += 0.03) + "s";
-    // console.log(n);
-  }
-  greenSockFade();
-};
+// let startSvgAnimation = () => {
+//   let title = document.querySelector(".hero_text>h1");
+//   let subTitle = document.querySelector(".hero_text>p");
+//   title.classList.add("textAnimation");
+//   subTitle.classList.add("textAnimation");
+//   let svg = document.querySelector(".drawSvg");
+//   let drawFirst = document.querySelector("#first").children;
+//   // let n = 0;
+//   svg.style.visibilty = "initial;";
+//   // console.log(drawFirst);
+//   for (let i = 0; i < drawFirst.length; i++) {
+//     drawFirst[i].classList.add("draw");
+//     // drawFirst[i].style.animationDelay = (n += 0.03) + "s";
+//     // console.log(n);
+//   }
+//   greenSockFade();
+// };
 
-let greenSockFade = () => {
-  let figure = document.querySelector(".heroImg");
-  TweenMax.fromTo(
-    figure,
-    1,
-    {
-      opacity: 0
-    },
-    {
-      opacity: 1,
-      ease: Power3.easeIn
-    },
-    5
-  );
+// let greenSockFade = () => {
+//   let figure = document.querySelector(".heroImg");
+//   TweenMax.fromTo(
+//     figure,
+//     1,
+//     {
+//       opacity: 0
+//     },
+//     {
+//       opacity: 1,
+//       ease: Power3.easeIn
+//     },
+//     5
+//   );
 
-  let laptop = document.querySelector(".hero_laptop");
-  TweenMax.from(
-    laptop,
-    1,
-    {
-      opacity: 0,
-      ease: Power3.easeIn
-    },
-    10
-  );
-};
+//   let laptop = document.querySelector(".hero_laptop");
+//   TweenMax.from(
+//     laptop,
+//     1,
+//     {
+//       opacity: 0,
+//       ease: Power3.easeIn
+//     },
+//     10
+//   );
+// };
 const section_better = document.querySelector("#better");
 let section_better_items = section_better.querySelectorAll(".item");
 let section_better_img = section_better.querySelector(".absolute:nth-child(2)");
@@ -135,46 +135,46 @@ section_better_items.forEach(item => {
     // console.log("hoverOut");
   });
 });
-const applyStyle = item => {
-  item.querySelector("h3").style.color = "#EF6461";
-  item.querySelector("p").style.color = "#EF6461";
-  resizeText(2, item.querySelector("h3"));
-};
-const resizeText = (multiplier, p) => {
-  if (p.style.fontSize == "") {
-    p.style.fontSize = "1.0em";
-  }
-  p.style.fontSize = parseFloat(p.style.fontSize) + multiplier * 0.2 + "em";
-};
-const changeImage = (item, img) => {
-  // let img = section.querySelector("img");
-  // console.log({ "item.id": item.id });
-  img.classList.add("change");
-  if (item.id === "better_item_1")
-    img.setAttribute("src", "img/architect_project_single.png");
-  if (item.id === "better_item_2")
-    img.setAttribute("src", "img/architect_leads_single.png");
-  if (item.id === "better_item_3")
-    img.setAttribute("src", "img/architect_tender_single.png");
-  if (item.id === "better_item_4")
-    img.setAttribute("src", "img/architect_view_project_single.png");
-  img.addEventListener("animationend", () => {
-    removeAnimationClass(img, "change");
-  });
-};
-const clearAllItemsStyle = (items, sectionName) => {
-  items.forEach(item => {
-    if (sectionName === "better") {
-      item.querySelector("h3").style.color = "grey";
-      item.querySelector("p").style.color = "grey";
-      item.querySelector("h3").style.fontSize = "1em";
-    }
-    if (sectionName === "arch_projects") {
-      item.querySelector("svg").style.fill = "lightgrey";
-      item.querySelector("h3").style.color = "lightgrey";
-    }
-  });
-};
+// const applyStyle = item => {
+//   item.querySelector("h3").style.color = "#EF6461";
+//   item.querySelector("p").style.color = "#EF6461";
+//   resizeText(2, item.querySelector("h3"));
+// };
+// const resizeText = (multiplier, p) => {
+//   if (p.style.fontSize == "") {
+//     p.style.fontSize = "1.0em";
+//   }
+//   p.style.fontSize = parseFloat(p.style.fontSize) + multiplier * 0.2 + "em";
+// };
+// const changeImage = (item, img) => {
+//   // let img = section.querySelector("img");
+//   // console.log({ "item.id": item.id });
+//   img.classList.add("change");
+//   if (item.id === "better_item_1")
+//     img.setAttribute("src", "img/architect_project_single.png");
+//   if (item.id === "better_item_2")
+//     img.setAttribute("src", "img/architect_leads_single.png");
+//   if (item.id === "better_item_3")
+//     img.setAttribute("src", "img/architect_tender_single.png");
+//   if (item.id === "better_item_4")
+//     img.setAttribute("src", "img/architect_view_project_single.png");
+//   img.addEventListener("animationend", () => {
+//     removeAnimationClass(img, "change");
+//   });
+// };
+// const clearAllItemsStyle = (items, sectionName) => {
+//   items.forEach(item => {
+//     if (sectionName === "better") {
+//       item.querySelector("h3").style.color = "grey";
+//       item.querySelector("p").style.color = "grey";
+//       item.querySelector("h3").style.fontSize = "1em";
+//     }
+//     if (sectionName === "arch_projects") {
+//       item.querySelector("svg").style.fill = "lightgrey";
+//       item.querySelector("h3").style.color = "lightgrey";
+//     }
+//   });
+// };
 
 // function timelineAnimation() {
 //   let tl = new TimelineMax();
@@ -243,6 +243,14 @@ const clearAllItemsStyle = (items, sectionName) => {
 //     }
 //   }
 // }
+
+// const shrinkRemoveArrow = () => {
+//   section_why_items.forEach(bubble => {
+//     bubble.classList.remove("arrow");
+//     bubble.classList.remove("grow");
+//   });
+// };
+
 let init = () => {
   document.querySelector(".loaderWrapper").classList.add("hideLoader");
   // startHeroAnimation();

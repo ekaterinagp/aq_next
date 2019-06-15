@@ -20,7 +20,7 @@ const fetchPost = () => {
 
 let showSinglePost = async singlePost => {
   let divHolder = document.querySelector("#mainTextBlog");
-  let backGroundDiv = document.querySelector("#heroBackgroundImage");
+  // let backGroundDiv = document.querySelector("#heroBackgroundImage");
   divHolder.querySelector("h1").textContent = singlePost.title.rendered;
   divHolder.querySelector("p").innerHTML = singlePost.content.rendered;
   const imgBGBlog = await fetch(
@@ -31,10 +31,10 @@ let showSinglePost = async singlePost => {
 };
 
 const init = async () => {
-  setTimeout(   ()=>{ 
+  setTimeout(() => {
     document.querySelector(".loaderWrapper").classList.add("hideLoader");
-   }, 1000)
- 
+  }, 1000);
+
   const post = await fetchPost();
   showSinglePost(post);
 };
