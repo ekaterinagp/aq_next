@@ -108,7 +108,7 @@ a:hover,
   padding-left: 1em;
   background-color: #f1f1f1;
   /* min-width: 160px; */
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   z-index: 1;
   /* margin-top: 0.5em; */
   line-height: 1.5em;
@@ -124,10 +124,14 @@ a:hover,
   padding: 15px;
   text-align: left;
   margin: 0;
+  font-weight: 100;
+}
+.dropdownContent a.active{
+  color:#ef6461;
+  font-weight: bold;
 }
 
 .dropdownContent a:hover {
-  background-color: white;
   color: #ef6461;
 }
 
@@ -246,11 +250,13 @@ header ul {
   margin: auto 0;
 }
 
-header li {
+header li, .drop {
   display: inline;
   padding: 1em;
   line-height: 10vh;
-  /* height: 10vh; */
+}
+.dropdownContent a{
+  
 }
 
 header .orange_button {
@@ -1926,6 +1932,9 @@ svg {
   /* padding:5%; */
   background-color: rgba(0, 0, 0, 0.6);
 }
+.formWrapper .section_title{
+margin:0;
+}
 #buttonsForm {
   margin-top: 1%;
 }
@@ -1954,7 +1963,7 @@ svg {
 }
 .imgForm {
   width: 100%;
-  height: 60%;
+  height: 55%;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px 10px 0 0;
@@ -4083,3 +4092,10 @@ margin-bottom: -5em;
   right:5em;
 }
 }
+
+@media only screen and (min-resolution: 110dpi ) {
+   
+    body, button, label{
+      font-size: 80%;
+    }
+} 

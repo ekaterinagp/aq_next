@@ -1,3 +1,5 @@
+"use strict";
+
 const resizeText = (multiplier, p) => {
   if (p.style.fontSize == "") {
     p.style.fontSize = "1.0em";
