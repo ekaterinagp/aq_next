@@ -154,7 +154,7 @@ const createTimeline = (parts, i) => {
 const sellingPointsForIndividuals = (parts, i, imgSrc) => {
   let divHolder = document.createElement("div");
   divHolder.id = "section_whatyouget";
-  let classesToAdd = ["fullScreen", "wrapper_2_columns_rows"];
+  let classesToAdd = [ "wrapper_2_columns_rows"];
   divHolder.classList.add(...classesToAdd);
   let h1 = document.createElement("h1");
   h1.classList.add("section_title");
