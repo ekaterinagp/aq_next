@@ -991,6 +991,7 @@ fill:#ef6461;
 }
 .box .section_title {
   margin-top: 0;
+  padding-top: 0;
 }
 .box .sub_title {
   margin-bottom: 2em;
@@ -1807,9 +1808,9 @@ h1 > span {
   margin: 0 10% 5%;
 }
 #contact_form {
-  grid-gap: 5%;
+  grid-gap: 0.5em;
   /* margin: auto; */
-  grid-template-rows: 0.5fr 0.1fr 0.5fr 0.1fr 2fr;
+  grid-template-rows: 0.5fr 0.1fr 0.5fr 0.1fr 2.5fr;
 }
 
 #contact_form span {
@@ -2665,11 +2666,15 @@ input:invalid {
   #section_whatyouget,
   #happyClients {
     width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
   }
 
   .faq > img {
-    margin: 9em 2em 0;
+    margin: 1em 2em 0;
+  }
+
+  .section_title {
+    padding: 0;
   }
 
   #timelineSection,
@@ -2739,9 +2744,9 @@ input:invalid {
     right: 0;
   }
 
-  .faq .section_title {
+  /* .faq .section_title {
     padding-top: 4em;
-  }
+  } */
 
   .text_left {
     margin: 0 0 0 4em;
@@ -2826,7 +2831,7 @@ input:invalid {
     width: 80%;
   } */
   .client {
-    height: 30vh;
+    height: 50vh;
     margin-top: 7em;
   }
   #villaPage .heroWireframe > .hero_text {
@@ -3660,7 +3665,7 @@ margin-bottom: -5em;
     padding: 1em 2em;
   }
   .textPadding {
-    margin:3em 2em;
+    margin: 3em 2em;
   }
   /* .divItemsForHeight {
     height: 70vh;
@@ -3757,7 +3762,7 @@ margin-bottom: -5em;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.1fr 1fr 3fr;
     height: auto;
-    margin:0 2em;
+    margin: 0 2em;
   }
   .img_wrapper {
     width: 80%;
