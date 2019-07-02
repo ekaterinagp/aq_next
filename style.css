@@ -474,6 +474,7 @@ h4 #number_firms {
 .wrapper_2_columns {
   display: grid;
   grid-template-columns: 2fr 2fr;
+  grid-gap: 1em;
 }
 .wrapper_2_columns_rows {
   display: grid;
@@ -787,7 +788,7 @@ button,
 /* #cons,*/
 
 #platform {
-  margin: 2em 0;
+  margin: 4em 0;
 }
 
 .item p,
