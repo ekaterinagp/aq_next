@@ -29,18 +29,16 @@ li {
   font-family: "Montserrat", sans-serif;
 }
 
-
-
 #error-message,
 .error-message-email-contact,
 .error-message-text-contact {
   display: block;
   max-height: 10px;
-  margin: .5em 0;
+  margin: 0.5em 0;
   min-height: 10px;
   padding-right: 3em;
-  font-size: .8em;
-  color:#ef6461;
+  font-size: 0.8em;
+  color: #ef6461;
 }
 
 #subscribe_email {
@@ -1167,7 +1165,7 @@ fill:#ef6461;
   /* position: absolute; */
   /* top: 7vh; */
   width: 100%;
-  height:45vh;
+  height: 45vh;
   margin: 5em auto 0;
   padding: 5% 8%;
   z-index: 100;
@@ -1883,8 +1881,8 @@ svg {
   font-family: "Poppins", sans-serif;
 }
 /*  Alert modal */
-.alertCheck{
-  border-radius:50%;
+.alertCheck {
+  border-radius: 50%;
   color: white;
   background: #ef6461;
   position: absolute;
@@ -1896,22 +1894,22 @@ svg {
   height: 2em;
   font-size: 1.5em;
   line-height: 2em;
-  }
+}
 .alert {
   border-radius: 10px;
   width: 30%;
-  right:0;
-  left:0;
-  padding:1em 1.5em;
-  margin:10% auto;
+  right: 0;
+  left: 0;
+  padding: 1em 1.5em;
+  margin: 10% auto;
   height: auto;
   background-color: white;
   position: fixed;
-  text-align:center;
+  text-align: center;
 }
 
-.alert .orange_button{
-  padding: .7em 4em;
+.alert .orange_button {
+  padding: 0.7em 4em;
 }
 /*  Free estimation form  */
 .close {
@@ -1921,7 +1919,8 @@ svg {
   margin: 5%;
   right: 0;
 }
-.formWrapper, .alertWrapper {
+.formWrapper,
+.alertWrapper {
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -2107,7 +2106,7 @@ input:checked + .slider:before {
   margin: auto;
 }
 
-#buildingType{
+#buildingType {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr;
   margin: auto;
@@ -2138,7 +2137,7 @@ input:checked + .btnRadio:before {
   right: 0;
   margin: 30% auto;
   color: white;
-  padding: 0 .6em;
+  padding: 0 0.6em;
   box-sizing: border-box;
   border-radius: 50%;
   color: white;
@@ -2595,13 +2594,15 @@ img#platform {
 input:invalid {
   border-bottom: 1px solid rgba(145, 36, 36, 0.3);
 } */
-#contactForm div, .validSymbol, .invalidSymbol {
+#contactForm div,
+.validSymbol,
+.invalidSymbol {
   position: relative;
 }
-#projectDetails .validSymbol::after, 
-#projectDetails .invalidSymbol::after{
-  top:inherit;
-  right:5em;
+#projectDetails .validSymbol::after,
+#projectDetails .invalidSymbol::after {
+  top: inherit;
+  right: 5em;
 }
 .validSymbol::after {
   content: "✓";
@@ -2636,7 +2637,7 @@ input:invalid {
 }
 
 /* Media Queries   */
-@media only screen and (min-width: 1924px) {
+@media only screen and (min-width: 1920px) {
   #sections,
   /* #platform,
   .platformBox,  */
@@ -2645,8 +2646,12 @@ input:invalid {
   #section_whatyouget,
   #happyClients,
   .blogsPart {
-    margin: 0 20em;
+    /* margin: 0 20em; */
     width: auto;
+  }
+
+  #platform {
+    margin: 8em 0;
   }
 
   .header {
@@ -2655,20 +2660,110 @@ input:invalid {
     /* margin: 3em 0 0; */
   }
 
+  .box {
+    width: 90%;
+  }
+
+  .faq {
+    padding-top: 3em;
+  }
+
+  .wrapper_pro {
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    right: 0;
+  }
+
+  .faq .section_title {
+    padding-top: 3em;
+  }
+
+  .text_left {
+    margin: 0 0 0 4em;
+    font-size: 1.3em;
+  }
+
+  .img_wrapper .absolute {
+    width: 90%;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 145%;
+  }
+
+  .mapouter {
+    text-align: left;
+  }
+
+  #contact_form {
+    margin: 0 3em 3em;
+  }
+
+  #sections h3 {
+    font-size: 1.3em;
+  }
+
+  #about_us {
+    background-size: cover;
+  }
+
+  .box .section_title {
+    padding-top: 0;
+  }
+
+  .sectionItem {
+    height: 50vh;
+  }
+
+  .click_text {
+    width: 60%;
+    text-align: center;
+    margin: 7em auto 0;
+  }
+
+  #frontpageBlogs .boxStyle {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45vw;
+    height: 35vh;
+    margin: 1vw;
+    justify-self: center;
+  }
+
+  .click_text p {
+    font-size: 1.5em;
+  }
+
+  .items {
+    width: 250px;
+  }
+
+  .absolute {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    top: 0;
+  }
+
   #frontpageBlogs {
     width: auto;
   }
-  .platformBox {
+  /* .platformBox {
     width: 60%;
-  }
-  #section_platform .absolute {
+  } */
+  /* #section_platform .absolute {
     top: 17em;
     right: -17em;
     width: 80%;
-  }
+  } */
 }
+
 @media only screen and (min-height: 1000px) and (max-width: 1366px) {
- 
   header .orange_button {
     margin: auto;
   }
@@ -2759,7 +2854,7 @@ input:invalid {
     grid-template-rows: 0.3fr 0.1fr 1fr;
   }
   .client {
-    height:20em;
+    height: 20em;
   }
   /* .caruselle {
     height: 30vh;
@@ -2786,17 +2881,17 @@ input:invalid {
 } */
 @media only screen and (max-width: 1050px) {
   #projectType .btnRadio {
-    height: 20vh;
-}
-#projectType .imgForm{
-  height:45%;
-}
-#buildingType .btnRadio{
-  height:10vh;
-}
-#projectDetails{
-  padding:0;
-}
+    height: 50vh;
+  }
+  #projectType .imgForm {
+    height: 45%;
+  }
+  #buildingType .btnRadio {
+    height: 10vh;
+  }
+  #projectDetails {
+    padding: 0;
+  }
 
   .drawSvg,
   .heroImg {
@@ -2900,12 +2995,12 @@ input:invalid {
     margin: auto 0;
     padding: 1em;
   }
-  .alert .orange_button{
-    margin:auto;
+  .alert .orange_button {
+    margin: auto;
   }
-  .alert{
-    width:40%;
-    margin:30% auto;
+  .alert {
+    width: 40%;
+    margin: 30% auto;
   }
   .userImage {
     top: -5vh;
@@ -2924,7 +3019,7 @@ input:invalid {
     margin: 0;
   }
   .client {
-    height:20em;
+    height: 20em;
   }
   /* #happyClients{
     height:75vh;
@@ -2997,8 +3092,8 @@ margin-bottom: -5em;
   header .orange_button {
     display: none;
   }
-  .alert .orange_button{
-    display:block;
+  .alert .orange_button {
+    display: block;
   }
   svg.menuIcon {
     display: block;
@@ -3274,20 +3369,20 @@ margin-bottom: -5em;
     overflow: visible;
   }
   /*FORM  */
-  #projectType .btnRadio{
-    height:30vh;
+  #projectType .btnRadio {
+    height: 30vh;
   }
   /* #projectDetails .validSymbol::after, 
   #projectDetails .invalidSymbol::after{
     right:0;
   } */
   #contactForm {
-    width:50%
+    width: 50%;
   }
-  #projectDetails .validSymbol::after, 
-#projectDetails .invalidSymbol::after{
-  right:0;
-}
+  #projectDetails .validSymbol::after,
+  #projectDetails .invalidSymbol::after {
+    right: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -3542,7 +3637,7 @@ margin-bottom: -5em;
   /* frontpage */
 
   .hero {
-      width:auto;
+    width: auto;
     overflow: initial;
     background-position: 25%;
     margin-bottom: 0;
@@ -3669,7 +3764,7 @@ margin-bottom: -5em;
     height:80vh;
   } */
   .client {
-    height:30em;
+    height: 30em;
   }
   .userImage {
     top: -4em;
@@ -3938,38 +4033,38 @@ margin-bottom: -5em;
     height: 60vh;
   }
   /* FORM */
-  #projectType .btnRadio{
-    height:21vh;
+  #projectType .btnRadio {
+    height: 21vh;
   }
-  .btnRadio{
-    padding:.5em;
+  .btnRadio {
+    padding: 0.5em;
   }
-  #buildingType{
+  #buildingType {
     grid-template-columns: 1fr 1fr;
   }
- input:checked + .btnRadio:before {
+  input:checked + .btnRadio:before {
     margin: 10% auto;
   }
- .imgForm{
-   display:none;
+  .imgForm {
+    display: none;
   }
-  .alert{
-    width:80%;
+  .alert {
+    width: 80%;
     margin: 30% auto;
   }
-  #form{
-    margin:5% 5vw;
-    width:90vw;
+  #form {
+    margin: 5% 5vw;
+    width: 90vw;
   }
-  #projectDetails .validSymbol::after, 
-#projectDetails .invalidSymbol::after{
-  right:8em;
-}
+  #projectDetails .validSymbol::after,
+  #projectDetails .invalidSymbol::after {
+    right: 8em;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-  #projectType .btnRadio{
-    height:20vh;
+  #projectType .btnRadio {
+    height: 20vh;
   }
   .textPadding {
     margin: 2em;
@@ -4020,9 +4115,9 @@ margin-bottom: -5em;
   .platformBox .wrapper_4_columns {
     font-size: 0.8em;
   }
-  .carouselWrapper {
-    /* height: 80vh; */
-  }
+  /* .carouselWrapper {
+    height: 80vh;
+  } */
 
   #happyClients,
   .blogsPart {
@@ -4041,16 +4136,16 @@ margin-bottom: -5em;
   .textOnImage {
     padding: 1em;
   }
-  #projectType .btnRadio{
-    height:26vh;
+  #projectType .btnRadio {
+    height: 26vh;
   }
   .client {
     height: 28em;
   }
 }
 @media only screen and (max-width: 320px) {
-  #projectType .btnRadio{
-    height:25vh;
+  #projectType .btnRadio {
+    height: 25vh;
   }
   .divItemsForHeight {
     height: 85vh;
@@ -4085,10 +4180,10 @@ margin-bottom: -5em;
   .hero {
     height: 100vh;
   }
-  #projectDetails .validSymbol::after, 
-#projectDetails .invalidSymbol::after{
-  right:5em;
-}
+  #projectDetails .validSymbol::after,
+  #projectDetails .invalidSymbol::after {
+    right: 5em;
+  }
 }
 
 @media only screen and (min-resolution: 110dpi ) {

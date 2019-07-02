@@ -294,7 +294,9 @@ section_types_items.forEach(item => {
 const fetchTestimonials = () => {
   let endpoint = "https://architecturequote.com/wp-json/wp/v2/testimonial";
   return new Promise((resolve, reject) => {
-    fetch(endpoint)
+    fetch(endpoint, {
+      credentials: "same-origin"
+    })
       .then(res => res.json())
       .then(function(data) {
         resolve(data);
