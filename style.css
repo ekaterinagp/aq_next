@@ -408,7 +408,7 @@ footer input {
   z-index: 3;
   text-align: left;
   padding: 2em;
-  padding-top: 25%;
+  padding-top: 15%;
   align-self: center;
   animation-delay: 0.5s;
 }
@@ -987,7 +987,7 @@ fill:#ef6461;
   padding: 2% 0 0;
 }
 .box .section_title {
-  margin-top: 0;
+  padding-top: 0;
 }
 .box .sub_title {
   margin-bottom: 2em;
@@ -2204,7 +2204,7 @@ input:checked + .btnRadio:before {
   padding: 18px;
   width: 100%;  
   margin: 0;
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
 }
 .faq_section .answer {
   padding: 0 18px;
@@ -2659,10 +2659,9 @@ input:invalid {
   .platformBox,  */
   #types,
   
-  #section_whatyouget,
-  #happyClients {
+  #section_whatyouget {
     width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
   }
 
   .faq > img {
@@ -2684,14 +2683,14 @@ input:invalid {
   }
 
   .houseIcon {
-    width: 54%;
+    width: 45%;
   }
 
   .client {
     margin: 8em auto 0;
   }
 
-  p {
+  p, li, h4, button {
     font-size: 1.3em;
   }
 
@@ -2823,11 +2822,10 @@ input:invalid {
     width: 80%;
   } */
   .client{
-    height:30vh;
     margin-top:7em;
   }
   #villaPage .heroWireframe > .hero_text {
-    padding-left:55%;
+    padding: 15% 5% 5% 55%;
   }
   .heroWireframe > .hero_text{
 padding-top:15%;
@@ -3819,7 +3817,7 @@ margin-bottom: -5em;
     width: 80%;
   }
   #arch_projects .click_text {
-    margin-top: 13em;
+    margin-top: 17em;
   }
   /*  SECTION TYPES  */
   #types {
@@ -3912,9 +3910,7 @@ margin-bottom: -5em;
     height:35%;
     width: 100vw;
   } */
-  #prosWrapper {
-    margin: 0;
-  }
+  
   .timelineText,
   .timelineWrapper:hover .timelineText,
   .timelineWrapper:focus .timelineText,
