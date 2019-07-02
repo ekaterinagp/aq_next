@@ -533,7 +533,7 @@ h4 #number_firms {
 }
 .section_title {
   /* padding: 2em 0 0; */
-  padding-top: 1em;
+  padding-top: 3em;
   grid-column: 1/-1;
   /* margin: 1em 0 0; */
 }
@@ -2647,7 +2647,10 @@ input:invalid {
     height: 60vh;
   }
 
-  
+  .faq > img {
+    margin: 9em 2em 0;
+   
+}
 
 #timelineSection, .timelineSection {
   margin: 0;
@@ -2709,7 +2712,7 @@ input:invalid {
   }
 
   .faq .section_title {
-    padding-top: 3em;
+    padding-top: 4em;
   }
 
   .text_left {
