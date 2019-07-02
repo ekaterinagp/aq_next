@@ -1282,8 +1282,8 @@ head .blogBG {
 /*   platform timeline */
 #timelineSection,
 .timelineSection {
-  margin: 0;
-  padding: 1em;
+  margin: 0 2em;
+  /* padding: 1em; */
 }
 #timelineSection ul {
   display: grid;
@@ -1660,7 +1660,7 @@ h1 > span {
 
 /*   OUR TEAM PAGE  */
 .headline {
-  margin: 12vh auto 0;
+  margin: 20vh auto 0;
   width: 65%;
   text-align: center;
 }
@@ -1745,7 +1745,7 @@ h1 > span {
 .timelineSection.team {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  margin: 2% 5%;
+  margin: 2% 2em;
 }
 
 .teamMember:nth-child(odd) {
@@ -2737,7 +2737,7 @@ input:invalid {
   }
 
   .absolute {
-    top: 5em;
+    top: 0;
   }
   #hero {
     background-image: url(img/hero_1-min.jpg);
@@ -3043,9 +3043,9 @@ margin-bottom: -5em;
   }
   /*  Section what you get  */
   #section_whatyouget .absolute {
-    top: 10vh;
-    width: 150%;
-    right: -10em;
+    /* top: 10vh; */
+    width: 100%;
+    /* right: -10em; */
   }
   /*  platform section  */
   .platformBox {
@@ -3515,9 +3515,7 @@ margin-bottom: -5em;
     padding: 50% 25%;
   }
   /* MENU */
-  header {
-    padding: 0;
-  }
+ 
   header .logo {
     width: 90%;
   }
@@ -3568,8 +3566,9 @@ margin-bottom: -5em;
   /*  SECTION WHAT YOU GET  */
   #section_whatyouget {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 1fr 3fr;
+    grid-template-rows: 0.1fr 0.1fr 1.5fr 3fr;
     height: auto;
+    margin:0 2em;
   }
   .img_wrapper {
     width: 80%;
@@ -3589,9 +3588,7 @@ margin-bottom: -5em;
   #platform .absolute {
     display: none;
   }
-  .platformBox {
-    width: 100%;
-  }
+
   .platformBox > .wrapper_4_columns {
     margin: 0;
     font-size: 0.9em;
@@ -3750,7 +3747,7 @@ margin-bottom: -5em;
   .network {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 2fr;
+    grid-template-rows: 0.1fr 1.5fr 2fr;
   }
   .network .img_wrapper,
   #better .img_wrapper {
