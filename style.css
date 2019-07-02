@@ -3642,6 +3642,7 @@ margin-bottom: -5em;
   }
   .timelineText p {
     opacity: 1;
+    font-size: .9em;
   }
   /* FAQ */
   .faq {
