@@ -69,7 +69,7 @@ const createSimpleImgTextLayout = (parts, pic, i) => {
   // let divForImg = document.createElement("div");
   // divForImg.setAttribute("class", "platformImg");
   let img = document.createElement("img");
-  img.setAttribute("id", "platform");
+  img.setAttribute("class", "imgStyle");
   img.src = pic.media_details.sizes.large.source_url;
   // divForImg.appendChild(img);
   div.append(h1, h2, divForP, img);
@@ -160,7 +160,7 @@ const createTimeline = (parts, i) => {
 const sellingPointsForIndividuals = (parts, i, imgSrc) => {
   let divHolder = document.createElement("div");
   divHolder.id = "section_whatyouget";
-  let classesToAdd = ["fullScreen", "wrapper_2_columns_rows"];
+  let classesToAdd = [ "wrapper_2_columns_rows"];
   divHolder.classList.add(...classesToAdd);
   let h1 = document.createElement("h1");
   h1.classList.add("section_title");

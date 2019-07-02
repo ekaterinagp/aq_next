@@ -167,11 +167,12 @@ select {
 }
 /*  HEADER  */
 header > .wrapper_1_3_1 > a {
-  margin: auto;
+  margin: auto 0;
+  text-align:left;
 }
 svg.menuIcon {
   cursor: pointer;
-  margin: 10% 2em 0;
+  margin: 1.5em 0;
   /* z-index: 15; */
   fill: #2c2e3e;
   height: 40px;
@@ -256,7 +257,7 @@ header li,
 }
 
 header .orange_button {
-  margin: auto;
+  margin: auto 0 auto 1em;
 }
 
 .logo {
@@ -333,13 +334,14 @@ footer input {
   position: relative;
   /* overflow-x: hidden; */
   height: 85%;
-  width: 96%;
-  margin: 10vh 1em;
+  /* width: 96%; */
+  box-sizing:border-box;
+  margin: 10vh 2em;
   border-radius: 10px;
 }
 .heroWireframe {
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   height: 85vh;
   width: 96%;
   margin: 10vh auto 2%;
@@ -379,7 +381,7 @@ footer input {
 #spatial_planningPage .wrapper_pro,
 #villaPage .wrapper_pro , */
 #forMore .wrapper_pro {
-  bottom: 15%;
+  bottom: 5%;
 }
 
 #villaPage .heroWireframe > .hero_text {
@@ -394,9 +396,9 @@ footer input {
   padding: 22% 5% 5% 55%;
 }
 .hero_lp {
-  margin: 10vh auto 2%;
+  margin: 10vh 2em 2%;
   border-radius: 10px;
-  width: 96%;
+  /* width: 96%; */
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -533,10 +535,9 @@ h4 #number_firms {
   text-align: center;
 }
 .section_title {
-  /* padding: 2em 0 0; */
+  padding: 2em 0 0;
   /* padding-top: 3em; */
   grid-column: 1/-1;
-  /* margin: 1em 0 0; */
 }
 .sub_title,
 .sub_title > h2 {
@@ -740,7 +741,7 @@ button,
 
 .drawSvg {
   z-index: 2;
-  width: 96vw;
+  width: 100%;
   top: 0;
   height: auto;
   position: absolute;
@@ -752,7 +753,7 @@ button,
   border-radius: 10px;
   position: absolute;
   z-index: 1;
-  width: 96vw;
+  width: 100%;
   height: auto;
   top: 0;
   /* animation: fadeIn 0.3s ease-in forwards;
@@ -796,9 +797,9 @@ button,
 }
 
 .platformBox {
-  width: 96%;
-  height: 85%;
-  margin: auto;
+  /* width: 96%; */
+    height: 85%;
+  margin: 0 2em;
   border-radius: 10px;
 }
 .platformBox > .wrapper_4_columns {
@@ -942,8 +943,8 @@ fill:#ef6461;
 
 #section_platform .absolute {
   z-index: 0;
-  top: 12em;
-  right: 0;
+  top: 15em;
+  right: 2em;
   width: 45%;
 }
 .arrow:after {
@@ -1289,8 +1290,8 @@ head .blogBG {
 /*   platform timeline */
 #timelineSection,
 .timelineSection {
-  margin: 0;
-  padding: 1em;
+  margin: 0 2em;
+  /* padding: 1em; */
 }
 #timelineSection ul {
   display: grid;
@@ -1434,7 +1435,7 @@ head .blogBG {
   position: relative;
   /* margin: 5em 2em; */
   /* height: 60vh; */
-  margin: 0 2%;
+  margin: 2em;
   text-align: center;
 
   border-radius: 10px;
@@ -1668,7 +1669,7 @@ h1 > span {
 
 /*   OUR TEAM PAGE  */
 .headline {
-  margin: 12vh auto 0;
+  margin: 20vh auto 0;
   width: 65%;
   text-align: center;
   padding-top: 1em;
@@ -1754,7 +1755,7 @@ h1 > span {
 .timelineSection.team {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  margin: 2% 5%;
+  margin: 2% 2em;
 }
 
 .teamMember:nth-child(odd) {
@@ -2193,15 +2194,23 @@ input:checked + .btnRadio:before {
 .faq > .sub_title {
   grid-column: 1;
 }
-.faq_section {
-  cursor: pointer;
-  display: grid;
+.faq_section{
+  position:relative;
+    display: grid;
   grid-template-columns: 3fr 0.5fr;
-  transition: height 0.3s;
-  padding: 1em 0 0;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+.faq_section .question {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;  
+  margin: 0;
+  font-size: 0.9em;
+}
+.faq_section .answer {
+  padding: 0 18px;
+  max-height: 0;
   overflow: hidden;
-  height: 4em;
+  transition: max-height 0.2s ease-out;
 }
 .faq_section:first-child {
   border-top: 0.5px solid rgba(0, 0, 0, 0.1);
@@ -2214,16 +2223,7 @@ input:checked + .btnRadio:before {
   border-right: 8px solid transparent;
   border-top: 10px solid #ef6461;
   transition: all 0.3s;
-  margin-left: 60%;
-}
-.faq_section h4 {
-  margin: 0;
-  font-size: 0.9em;
-}
-.answer {
-  /* margin-top: 2em; */
-  grid-column: 1/-1;
-  /* transition: all .3s; */
+  margin: 1em;
 }
 
 #heroBackgroundImage {
@@ -2433,6 +2433,13 @@ iframe {
 /* } */
 
 /* //wireframes  */
+#educationalPage #timelineSection ul,
+#landscapePage #timelineSection ul,
+#remodelingPage #timelineSection ul,
+#villaPage #timelineSection ul,
+#healthcarePage #timelineSection ul{
+  grid-template-columns: repeat(13, 1fr);
+}
 .wf .hero_text p {
   font-size: 1.2em;
 }
@@ -2463,8 +2470,8 @@ iframe {
 #wireframe_description {
   position: relative;
   width: 100%;
-  padding: 5%;
-  grid-template-rows: 0.1fr 1fr;
+  padding: 2em;
+  /* grid-template-rows: 0.1fr 1fr; */
 }
 
 #wireframe_description .header {
@@ -2473,7 +2480,6 @@ iframe {
 
 .description_text {
   font-size: 1.1em;
-  margin-top: 10%;
 }
 
 .description_text h3 {
@@ -2585,9 +2591,8 @@ img#platform {
   border-radius: 10px;
 }
 #forMore {
-  width: 90%;
   height: 70%;
-  margin: 5% auto;
+  margin:2em;
   color: white;
 }
 
@@ -2817,6 +2822,16 @@ input:invalid {
     right: -17em;
     width: 80%;
   } */
+  .client{
+    height:30vh;
+    margin-top:7em;
+  }
+  #villaPage .heroWireframe > .hero_text {
+    padding-left:55%;
+  }
+  .heroWireframe > .hero_text{
+padding-top:15%;
+  }
 }
 
 @media only screen and (min-height: 1000px) and (max-width: 1366px) {
@@ -2879,7 +2894,7 @@ input:invalid {
   .hero {
     margin-bottom: 0;
     height: 85%;
-    width: 96%;
+    /* width: 96%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%;
@@ -2893,7 +2908,7 @@ input:invalid {
   }
 
   .absolute {
-    top: 5em;
+    top: 0;
   }
   #hero {
     background-image: url(img/hero_1-min.jpg);
@@ -3150,9 +3165,7 @@ margin-bottom: -5em;
   }
 
   /* menu */
-  header {
-    padding: 0 1em;
-  }
+ 
   .menu ul p.drop {
     margin: 0;
     font-size: 1em;
@@ -3170,8 +3183,11 @@ margin-bottom: -5em;
   svg.menuIcon {
     display: block;
   }
+  header > .wrapper_1_3_1 > a{
+    text-align: right;
+  }
   header .logo {
-    margin: 1em;
+    /* margin: 1em; */
     width: 45%;
     grid-column: 2;
   }
@@ -3207,9 +3223,9 @@ margin-bottom: -5em;
   }
   /*  Section what you get  */
   #section_whatyouget .absolute {
-    top: 10vh;
-    width: 150%;
-    right: -10em;
+    /* top: 10vh; */
+    width: 100%;
+    /* right: -10em; */
   }
   /*  platform section  */
   .platformBox {
@@ -3407,6 +3423,7 @@ margin-bottom: -5em;
     display: none;
   }
   /*  WIREFRAMES  */
+  
   #businessPage .heroWireframe > .hero_text,
   #healthcarePage .heroWireframe > .hero_text,
   #interiorPage .heroWireframe > .hero_text,
@@ -3684,9 +3701,7 @@ margin-bottom: -5em;
     padding: 50% 25%;
   }
   /* MENU */
-  header {
-    padding: 0;
-  }
+ 
   header .logo {
     width: 90%;
   }
@@ -3715,7 +3730,7 @@ margin-bottom: -5em;
   .hero {
     width: auto;
     overflow: initial;
-    background-position: 25%;
+    background-position: 29%;
     margin-bottom: 0;
   }
   .hero_laptop {
@@ -3724,8 +3739,8 @@ margin-bottom: -5em;
   .hero_text,
   .heroWireframe > .hero_text {
     width: 100%;
-    padding: 2em;
-    font-size: 0.8em;
+    padding: 8em 2em 0;
+    font-size:0.8em;
   }
   /* #hero_architects .hero_text{
     padding: 9em 2em;
@@ -3737,8 +3752,11 @@ margin-bottom: -5em;
   /*  SECTION WHAT YOU GET  */
   #section_whatyouget {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 1fr 3fr;
-    /* height: 85vh; */
+    grid-template-rows: 0.1fr 0.1fr 1.5fr 3fr;
+    /* height: auto; */
+    margin:0 2em;
+    /* grid-template-rows: 0.1fr 0.1fr 1fr 3fr; */
+    height: 85vh;
   }
   .img_wrapper {
     width: 80%;
@@ -3759,9 +3777,7 @@ margin-bottom: -5em;
   #platform .absolute {
     display: none;
   }
-  .platformBox {
-    width: 100%;
-  }
+
   .platformBox > .wrapper_4_columns {
     margin: 0;
     font-size: 0.9em;
@@ -3920,7 +3936,7 @@ margin-bottom: -5em;
   .network {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 2fr;
+    grid-template-rows: 0.1fr 1.5fr 2fr;
   }
   .network .img_wrapper,
   #better .img_wrapper {
@@ -4230,8 +4246,14 @@ margin-bottom: -5em;
   .client {
     height: 28em;
   }
+  #forMore{
+    height:50vh;
+  }
 }
 @media only screen and (max-width: 320px) {
+  #forMore{
+    height:60vh;
+  }
   #projectType .btnRadio {
     height: 25vh;
   }
