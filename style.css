@@ -124,8 +124,8 @@ a:hover,
   margin: 0;
   font-weight: 100;
 }
-.dropdownContent a.active{
-  color:#ef6461;
+.dropdownContent a.active {
+  color: #ef6461;
   font-weight: bold;
 }
 
@@ -248,13 +248,11 @@ header ul {
   margin: auto 0;
 }
 
-header li, .drop {
+header li,
+.drop {
   display: inline;
   padding: 1em;
   line-height: 10vh;
-}
-.dropdownContent a{
-  
 }
 
 header .orange_button {
@@ -1931,8 +1929,8 @@ svg {
   /* padding:5%; */
   background-color: rgba(0, 0, 0, 0.6);
 }
-.formWrapper .section_title{
-margin:0;
+.formWrapper .section_title {
+  margin: 0;
 }
 #buttonsForm {
   margin-top: 1%;
@@ -2642,12 +2640,40 @@ input:invalid {
   /* #platform,
   .platformBox,  */
   #types,
-  #section_why,
+  
   #section_whatyouget,
-  #happyClients,
+  #happyClients {
+    width: 100%;
+    height: 60vh;
+  }
+
   .blogsPart {
-    /* margin: 0 20em; */
-    width: auto;
+    height: auto;
+  }
+
+  #section_why {
+    height: 45vh;
+  }
+
+  .houseIcon {
+    width: 52%;
+  }
+
+  .client {
+    margin: 8em auto 0;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  .sub_title,
+  .sub_title > h2 {
+    font-size: 1.3em;
+  }
+
+  .platformBox p {
+    font-size: 1.3em;
   }
 
   #platform {
@@ -4188,9 +4214,10 @@ margin-bottom: -5em;
   }
 }
 
-@media only screen and (min-resolution: 110dpi ) {
-   
-    body, button, label{
-      font-size: 80%;
-    }
-} 
+@media only screen and (min-resolution: 110dpi) {
+  body,
+  button,
+  label {
+    font-size: 80%;
+  }
+}
