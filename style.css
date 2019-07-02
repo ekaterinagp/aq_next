@@ -2422,9 +2422,12 @@ iframe {
 /* } */
 
 /* //wireframes  */
-/* .wf #timelineSection ul{
+.educationalPage #timelineSection ul,
+.landscapePage #timelineSection ul,
+.remodelingPage #timelineSection ul,
+.villaPage #timelineSection ul{
   grid-template-columns: repeat(13, 1fr);
-} */
+}
 .wf .hero_text p {
   font-size: 1.2em;
 }
