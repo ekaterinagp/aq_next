@@ -1947,7 +1947,7 @@ svg {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .formWrapper .section_title {
-  margin: 0;
+  padding: 0;
 }
 #buttonsForm {
   margin-top: 1%;
@@ -3660,7 +3660,7 @@ margin-bottom: -5em;
     padding: 1em 2em;
   }
   .textPadding {
-    margin: 7em 2em;
+    margin:3em 2em;
   }
   /* .divItemsForHeight {
     height: 70vh;
@@ -3755,11 +3755,9 @@ margin-bottom: -5em;
   /*  SECTION WHAT YOU GET  */
   #section_whatyouget {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 1.5fr 3fr;
-    /* height: auto; */
-    margin: 0 2em;
-    /* grid-template-rows: 0.1fr 0.1fr 1fr 3fr; */
-    /* height: 85vh; */
+    grid-template-rows: 0.1fr 0.1fr 1fr 3fr;
+    height: auto;
+    margin:0 2em;
   }
   .img_wrapper {
     width: 80%;
