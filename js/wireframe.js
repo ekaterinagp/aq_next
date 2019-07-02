@@ -2,14 +2,20 @@
 
 const createButtonForForm = (textStr, additionalClass) => {
   let button = document.createElement("button");
-  let classesToAdd = ["orange_button", additionalClass];
+  if (additionalClass) {
+    let classesToAdd = ["orange_button", additionalClass];
 
-  button.classList.add(...classesToAdd);
+    button.classList.add(...classesToAdd);
+    button.textContent = textStr;
+    button.addEventListener("click", () => {
+      createFormWrapper();
+    });
+  } else {
+    additionalClass = null;
+    button.classList.add("orange_button");
+    button.textContent = textStr;
+  }
 
-  button.textContent = textStr;
-  button.addEventListener("click", () => {
-    createFormWrapper();
-  });
   return button;
 };
 
@@ -132,7 +138,7 @@ const createSimple2ColumnsBGTextRight = (parts, img, i) => {
   pText.innerHTML = parts[i].content.rendered;
   let link = document.createElement("a");
   link.href = "platform.html";
-  let button = createButtonForForm("Read more", "class");
+  let button = createButtonForForm("Read more");
   link.append(button);
   pDiv.append(pText, link, wrapperPro);
   divHolder.append(h1, pDiv);

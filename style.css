@@ -2647,6 +2647,13 @@ input:invalid {
     height: 60vh;
   }
 
+  
+
+#timelineSection, .timelineSection {
+  margin: 0;
+  padding: 5em;
+}
+
   .blogsPart {
     height: auto;
   }
