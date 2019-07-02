@@ -2,7 +2,9 @@
 
 * {
   box-sizing: border-box;
+  font-size: 100%;
 }
+
 h1,
 h2,
 h3 {
@@ -14,11 +16,12 @@ h1 {
 h2 {
   font-size: 1.5em;
 }
-h3 {
-  font-size: 1em;
+h3,
+li {
+  font-size: 1.3em;
 }
 p {
-  font-size: 0.935em;
+  font-size: 1em;
   line-height: 1.3em;
 }
 p,
@@ -168,7 +171,7 @@ select {
 /*  HEADER  */
 header > .wrapper_1_3_1 > a {
   margin: auto 0;
-  text-align:left;
+  text-align: left;
 }
 svg.menuIcon {
   cursor: pointer;
@@ -335,7 +338,7 @@ footer input {
   /* overflow-x: hidden; */
   height: 85%;
   /* width: 96%; */
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin: 10vh 2em;
   border-radius: 10px;
 }
@@ -798,7 +801,7 @@ button,
 
 .platformBox {
   /* width: 96%; */
-    height: 85%;
+  height: 85%;
   margin: 0 2em;
   border-radius: 10px;
 }
@@ -987,6 +990,7 @@ fill:#ef6461;
   padding: 2% 0 0;
 }
 .box .section_title {
+  margin-top: 0;
   padding-top: 0;
 }
 .box .sub_title {
@@ -1804,9 +1808,9 @@ h1 > span {
   margin: 0 10% 5%;
 }
 #contact_form {
-  grid-gap: 5%;
+  grid-gap: 0.5em;
   /* margin: auto; */
-  grid-template-rows: 0.5fr 0.1fr 0.5fr 0.1fr 2fr;
+  grid-template-rows: 0.5fr 0.1fr 0.5fr 0.1fr 2.5fr;
 }
 
 #contact_form span {
@@ -2194,15 +2198,15 @@ input:checked + .btnRadio:before {
 .faq > .sub_title {
   grid-column: 1;
 }
-.faq_section{
-  position:relative;
-    display: grid;
+.faq_section {
+  position: relative;
+  display: grid;
   grid-template-columns: 3fr 0.5fr;
 }
 .faq_section .question {
   cursor: pointer;
   padding: 18px;
-  width: 100%;  
+  width: 100%;
   margin: 0;
   /* font-size: 0.9em; */
 }
@@ -2437,7 +2441,7 @@ iframe {
 #landscapePage #timelineSection ul,
 #remodelingPage #timelineSection ul,
 #villaPage #timelineSection ul,
-#healthcarePage #timelineSection ul{
+#healthcarePage #timelineSection ul {
   grid-template-columns: repeat(13, 1fr);
 }
 .wf .hero_text p {
@@ -2592,7 +2596,7 @@ img#platform {
 }
 #forMore {
   height: 70%;
-  margin:2em;
+  margin: 2em;
   color: white;
 }
 
@@ -2665,7 +2669,11 @@ input:invalid {
   }
 
   .faq > img {
-    margin: 9em 2em 0;
+    margin: 1em 2em 0;
+  }
+
+  .section_title {
+    padding: 0;
   }
 
   #timelineSection,
@@ -2735,9 +2743,9 @@ input:invalid {
     right: 0;
   }
 
-  .faq .section_title {
+  /* .faq .section_title {
     padding-top: 4em;
-  }
+  } */
 
   .text_left {
     margin: 0 0 0 4em;
@@ -2773,6 +2781,7 @@ input:invalid {
 
   .box .section_title {
     padding-top: 0;
+    margin-top:0;
   }
 
   .sectionItem {
@@ -2821,14 +2830,18 @@ input:invalid {
     right: -17em;
     width: 80%;
   } */
-  .client{
-    margin-top:7em;
-  }
+  
   #villaPage .heroWireframe > .hero_text {
     padding: 15% 5% 5% 55%;
   }
-  .heroWireframe > .hero_text{
-padding-top:15%;
+  
+  .client {
+    height: 50vh;
+    margin-top: 7em;
+  }
+ 
+  .heroWireframe > .hero_text {
+    padding-top: 15%;
   }
 }
 
@@ -3163,7 +3176,7 @@ margin-bottom: -5em;
   }
 
   /* menu */
- 
+
   .menu ul p.drop {
     margin: 0;
     font-size: 1em;
@@ -3181,7 +3194,7 @@ margin-bottom: -5em;
   svg.menuIcon {
     display: block;
   }
-  header > .wrapper_1_3_1 > a{
+  header > .wrapper_1_3_1 > a {
     text-align: right;
   }
   header .logo {
@@ -3421,7 +3434,7 @@ margin-bottom: -5em;
     display: none;
   }
   /*  WIREFRAMES  */
-  
+
   #businessPage .heroWireframe > .hero_text,
   #healthcarePage .heroWireframe > .hero_text,
   #interiorPage .heroWireframe > .hero_text,
@@ -3655,7 +3668,7 @@ margin-bottom: -5em;
     padding: 1em 2em;
   }
   .textPadding {
-    margin:3em 2em;
+    margin: 3em 2em;
   }
   /* .divItemsForHeight {
     height: 70vh;
@@ -3699,7 +3712,7 @@ margin-bottom: -5em;
     padding: 50% 25%;
   }
   /* MENU */
- 
+
   header .logo {
     width: 90%;
   }
@@ -3738,7 +3751,7 @@ margin-bottom: -5em;
   .heroWireframe > .hero_text {
     width: 100%;
     padding: 8em 2em 0;
-    font-size:0.8em;
+    font-size: 0.8em;
   }
   /* #hero_architects .hero_text{
     padding: 9em 2em;
@@ -3752,7 +3765,7 @@ margin-bottom: -5em;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.1fr 1fr 3fr;
     height: auto;
-    margin:0 2em;
+    margin: 0 2em;
   }
   .img_wrapper {
     width: 80%;
@@ -3761,6 +3774,7 @@ margin-bottom: -5em;
     grid-row: 3;
     grid-column: 1/-1;
   }
+
   #section_whatyouget .absolute,
   .img_wrapper .absolute {
     width: 90%;
@@ -3769,6 +3783,7 @@ margin-bottom: -5em;
     right: 0;
     /* left: 25%; */
   }
+
   /* SECTION PLATFORM   */
   #platform .absolute {
     display: none;
@@ -4240,13 +4255,13 @@ margin-bottom: -5em;
   .client {
     height: 28em;
   }
-  #forMore{
-    height:50vh;
+  #forMore {
+    height: 50vh;
   }
 }
 @media only screen and (max-width: 320px) {
-  #forMore{
-    height:60vh;
+  #forMore {
+    height: 60vh;
   }
   #projectType .btnRadio {
     height: 25vh;
