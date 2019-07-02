@@ -69,7 +69,7 @@ const createSimpleImgTextLayout = (parts, pic, i) => {
   // let divForImg = document.createElement("div");
   // divForImg.setAttribute("class", "platformImg");
   let img = document.createElement("img");
-  img.setAttribute("id", "platform");
+  img.setAttribute("class", "imgStyle");
   img.src = pic.media_details.sizes.large.source_url;
   // divForImg.appendChild(img);
   div.append(h1, h2, divForP, img);

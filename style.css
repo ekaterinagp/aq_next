@@ -381,7 +381,7 @@ footer input {
 #spatial_planningPage .wrapper_pro,
 #villaPage .wrapper_pro , */
 #forMore .wrapper_pro {
-  bottom: 15%;
+  bottom: 5%;
 }
 
 #villaPage .heroWireframe > .hero_text {
@@ -534,10 +534,9 @@ h4 #number_firms {
   text-align: center;
 }
 .section_title {
-  /* padding: 2em 0 0; */
-  padding-top: 3em;
+  padding: 2em 0 0;
+  /* padding-top: 3em; */
   grid-column: 1/-1;
-  /* margin: 1em 0 0; */
 }
 .sub_title,
 .sub_title > h2 {
@@ -939,8 +938,8 @@ fill:#ef6461;
 
 #section_platform .absolute {
   z-index: 0;
-  top: 12em;
-  right: 0;
+  top: 15em;
+  right: 2em;
   width: 45%;
 }
 .arrow:after {
@@ -2182,15 +2181,23 @@ input:checked + .btnRadio:before {
 .faq > .sub_title {
   grid-column: 1;
 }
-.faq_section {
-  cursor: pointer;
-  display: grid;
+.faq_section{
+  position:relative;
+    display: grid;
   grid-template-columns: 3fr 0.5fr;
-  transition: height 0.3s;
-  padding: 1em 0 0;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+.faq_section .question {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;  
+  margin: 0;
+  font-size: 0.9em;
+}
+.faq_section .answer {
+  padding: 0 18px;
+  max-height: 0;
   overflow: hidden;
-  height: 4em;
+  transition: max-height 0.2s ease-out;
 }
 .faq_section:first-child {
   border-top: 0.5px solid rgba(0, 0, 0, 0.1);
@@ -2203,16 +2210,7 @@ input:checked + .btnRadio:before {
   border-right: 8px solid transparent;
   border-top: 10px solid #ef6461;
   transition: all 0.3s;
-  margin-left: 60%;
-}
-.faq_section h4 {
-  margin: 0;
-  font-size: 0.9em;
-}
-.answer {
-  /* margin-top: 2em; */
-  grid-column: 1/-1;
-  /* transition: all .3s; */
+  margin: 1em;
 }
 
 #heroBackgroundImage {
@@ -2422,10 +2420,11 @@ iframe {
 /* } */
 
 /* //wireframes  */
-.educationalPage #timelineSection ul,
-.landscapePage #timelineSection ul,
-.remodelingPage #timelineSection ul,
-.villaPage #timelineSection ul{
+#educationalPage #timelineSection ul,
+#landscapePage #timelineSection ul,
+#remodelingPage #timelineSection ul,
+#villaPage #timelineSection ul,
+#healthcarePage #timelineSection ul{
   grid-template-columns: repeat(13, 1fr);
 }
 .wf .hero_text p {
@@ -2458,8 +2457,8 @@ iframe {
 #wireframe_description {
   position: relative;
   width: 100%;
-  padding: 5%;
-  grid-template-rows: 0.1fr 1fr;
+  padding: 2em;
+  /* grid-template-rows: 0.1fr 1fr; */
 }
 
 #wireframe_description .header {
@@ -2468,7 +2467,6 @@ iframe {
 
 .description_text {
   font-size: 1.1em;
-  margin-top: 10%;
 }
 
 .description_text h3 {
@@ -2580,9 +2578,8 @@ img#platform {
   border-radius: 10px;
 }
 #forMore {
-  width: 90%;
   height: 70%;
-  margin: 5% auto;
+  margin:2em;
   color: white;
 }
 
@@ -2810,7 +2807,10 @@ input:invalid {
     margin-top:7em;
   }
   #villaPage .heroWireframe > .hero_text {
-    padding: 13% 5% 17% 55%;
+    padding-left:55%;
+  }
+  .heroWireframe > .hero_text{
+padding-top:15%;
   }
 }
 
@@ -3691,7 +3691,7 @@ margin-bottom: -5em;
   .hero {
     width: auto;
     overflow: initial;
-    background-position: 25%;
+    background-position: 29%;
     margin-bottom: 0;
   }
   .hero_laptop {
@@ -3700,8 +3700,8 @@ margin-bottom: -5em;
   .hero_text,
   .heroWireframe > .hero_text {
     width: 100%;
-    padding: 2em;
-    font-size: 0.8em;
+    padding: 8em 2em 0;
+    font-size:0.8em;
   }
   /* #hero_architects .hero_text{
     padding: 9em 2em;
@@ -4194,8 +4194,14 @@ margin-bottom: -5em;
   .client {
     height: 28em;
   }
+  #forMore{
+    height:50vh;
+  }
 }
 @media only screen and (max-width: 320px) {
+  #forMore{
+    height:60vh;
+  }
   #projectType .btnRadio {
     height: 25vh;
   }

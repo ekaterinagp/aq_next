@@ -132,18 +132,36 @@ section_network_items.forEach(item => {
 // const removeAnimationClass = (item, classToRemove) => {
 //   item.classList.remove(classToRemove);
 // };
-function addHeightToFaq(faq) {
-  if (open == false) {
-    // console.log("it is closed and needs to be opened");
-    faq.style.height = "21em";
-    faq.querySelector(".plus").style.transform = "rotate(180deg)";
-    open = true;
-  } else {
-    faq.style.height = "4em";
-    faq.querySelector(".plus").style.transform = "rotate(0)";
-    open = false;
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.maxHeight){
+//       content.style.maxHeight = null;
+//     } else {
+//       content.style.maxHeight = content.scrollHeight + "px";
+//     } 
+//   });
+  const addHeightToFaq = (faq)=>{
+    let content = faq.querySelector(".answer");
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
   }
-}
+// function addHeightToFaq(faq) {
+//   if (open == false) {
+//     // console.log("it is closed and needs to be opened");
+//     faq.style.height = "21em";
+//     faq.querySelector(".plus").style.transform = "rotate(180deg)";
+//     open = true;
+//   } else {
+//     faq.style.height = "4em";
+//     faq.querySelector(".plus").style.transform = "rotate(0)";
+//     open = false;
+//   }
+// }
 let open = false;
 async function init() {
   document.querySelector(".loaderWrapper").classList.add("hideLoader");
