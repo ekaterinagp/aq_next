@@ -169,11 +169,12 @@ select {
 }
 /*  HEADER  */
 header > .wrapper_1_3_1 > a {
-  margin: auto;
+  margin: auto 0;
+  text-align:left;
 }
 svg.menuIcon {
   cursor: pointer;
-  margin: 10% 2em 0;
+  margin: 1.5em 0;
   /* z-index: 15; */
   fill: #2c2e3e;
   height: 40px;
@@ -255,12 +256,10 @@ header li, .drop {
   padding: 1em;
   line-height: 10vh;
 }
-.dropdownContent a{
-  
-}
+
 
 header .orange_button {
-  margin: auto;
+  margin: auto 0 auto 1em;
 }
 
 .logo {
@@ -337,8 +336,9 @@ footer input {
   position: relative;
   /* overflow-x: hidden; */
   height: 85%;
-  width: 96%;
-  margin: 10vh 1em;
+  /* width: 96%; */
+  box-sizing:border-box;
+  margin: 10vh 2em;
   border-radius: 10px;
 }
 .heroWireframe {
@@ -398,9 +398,9 @@ footer input {
   padding: 22% 5% 5% 55%;
 }
 .hero_lp {
-  margin: 10vh auto 2%;
+  margin: 10vh 2em 2%;
   border-radius: 10px;
-  width: 96%;
+  /* width: 96%; */
   height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -743,7 +743,7 @@ button,
 
 .drawSvg {
   z-index: 2;
-  width: 96vw;
+  width: 100%;
   top: 0;
   height: auto;
   position: absolute;
@@ -755,7 +755,7 @@ button,
   border-radius: 10px;
   position: absolute;
   z-index: 1;
-  width: 96vw;
+  width: 100%;
   height: auto;
   top: 0;
   /* animation: fadeIn 0.3s ease-in forwards;
@@ -799,9 +799,9 @@ button,
 }
 
 .platformBox {
-  width: 96%;
-  height: 85%;
-  margin: auto;
+  /* width: 96%; */
+    height: 85%;
+  margin: 0 2em;
   border-radius: 10px;
 }
 .platformBox > .wrapper_4_columns {
@@ -2723,7 +2723,7 @@ input:invalid {
   .hero {
     margin-bottom: 0;
     height: 85%;
-    width: 96%;
+    /* width: 96%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%;
@@ -2985,9 +2985,7 @@ margin-bottom: -5em;
   }
 
   /* menu */
-  header {
-    padding: 0 1em;
-  }
+ 
   .menu ul p.drop {
     margin: 0;
     font-size: 1em;
@@ -3005,8 +3003,11 @@ margin-bottom: -5em;
   svg.menuIcon {
     display: block;
   }
+  header > .wrapper_1_3_1 > a{
+    text-align: right;
+  }
   header .logo {
-    margin: 1em;
+    /* margin: 1em; */
     width: 45%;
     grid-column: 2;
   }
