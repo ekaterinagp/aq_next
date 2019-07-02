@@ -472,6 +472,7 @@ h4 #number_firms {
 .wrapper_2_columns {
   display: grid;
   grid-template-columns: 2fr 2fr;
+  grid-gap: 1em;
 }
 .wrapper_2_columns_rows {
   display: grid;
@@ -786,7 +787,7 @@ button,
 /* #cons,*/
 
 #platform {
-  margin: 2em 0;
+  margin: 4em 0;
 }
 
 .item p,
@@ -1223,9 +1224,9 @@ fill:#ef6461;
 #name {
   display: inline;
 }
-#cons {
+/* #cons {
   height: 80vh;
-}
+} */
 /* blogposts */
 /* .clients {
   height: 80%;
@@ -3737,7 +3738,7 @@ margin-bottom: -5em;
   #section_whatyouget {
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.1fr 1fr 3fr;
-    height: 85vh;
+    /* height: 85vh; */
   }
   .img_wrapper {
     width: 80%;
