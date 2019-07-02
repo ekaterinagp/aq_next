@@ -533,7 +533,7 @@ h4 #number_firms {
 }
 .section_title {
   /* padding: 2em 0 0; */
-  padding-top: 3em;
+  /* padding-top: 3em; */
   grid-column: 1/-1;
   /* margin: 1em 0 0; */
 }
@@ -909,6 +909,10 @@ fill:#ef6461;
   position: absolute;
   top: 0;
 }
+
+.img_wrapper .absolute {
+  width: 80%;
+}
 .change {
   opacity: 0;
   transform: scaleX(0);
@@ -1219,7 +1223,9 @@ fill:#ef6461;
 #name {
   display: inline;
 }
-
+#cons {
+  height: 80vh;
+}
 /* blogposts */
 /* .clients {
   height: 80%;
@@ -1245,6 +1251,10 @@ head .blogBG {
 #frontpageBlogs {
   width: 70%;
   margin: auto;
+}
+
+#section_whatyouget .section_title {
+  padding-top: 2em;
 }
 #frontpageBlogs .boxStyle {
   position: relative;
@@ -1475,6 +1485,7 @@ head .blogBG {
 /*  Section three platform place */
 .network {
   margin: 3em 2em;
+  height: 80vh;
 }
 .network > .absolute {
   margin-left: -7em;
@@ -1659,6 +1670,7 @@ h1 > span {
   margin: 12vh auto 0;
   width: 65%;
   text-align: center;
+  padding-top: 1em;
 }
 #about_us {
   background: #f4f4f4;
@@ -1791,7 +1803,7 @@ h1 > span {
 }
 #contact_form {
   grid-gap: 5%;
-  margin: auto;
+  /* margin: auto; */
   grid-template-rows: 0.5fr 0.1fr 0.5fr 0.1fr 2fr;
 }
 
@@ -2649,13 +2661,13 @@ input:invalid {
 
   .faq > img {
     margin: 9em 2em 0;
-   
-}
+  }
 
-#timelineSection, .timelineSection {
-  margin: 0;
-  padding: 5em;
-}
+  #timelineSection,
+  .timelineSection {
+    margin: 0;
+    padding: 5em;
+  }
 
   .blogsPart {
     height: auto;
@@ -2666,7 +2678,7 @@ input:invalid {
   }
 
   .houseIcon {
-    width: 52%;
+    width: 54%;
   }
 
   .client {
@@ -2689,10 +2701,17 @@ input:invalid {
   #platform {
     margin: 8em 0;
   }
+  .network {
+    height: auto;
+  }
+
+  #cons {
+    height: auto;
+  }
 
   .header {
     grid-column: 1/-1;
-    padding-top: 3em;
+    /* padding-top: 3em; */
     /* margin: 3em 0 0; */
   }
 
@@ -2803,6 +2822,11 @@ input:invalid {
   header .orange_button {
     margin: auto;
   }
+
+  #section_whatyouget .section_title {
+    padding-top: 0;
+  }
+
   .hero {
     max-width: 100vw;
     overflow-x: hidden;
@@ -2919,6 +2943,11 @@ input:invalid {
   #projectType .btnRadio {
     height: 50vh;
   }
+
+  #section_whatyouget .section_title {
+    padding-top: 0;
+  }
+
   #projectType .imgForm {
     height: 45%;
   }
@@ -3064,6 +3093,10 @@ input:invalid {
 @media only screen and (max-width: 768px) {
   .logo {
     padding: 1em 0;
+  }
+
+  #section_whatyouget .section_title {
+    padding-top: 0;
   }
 
   #about_us .long_text {
@@ -3488,11 +3521,16 @@ margin-bottom: -5em;
     left: 0;
     right: 0;
     margin: auto;
-    width: 100%;
+    /* width: 100%; */
   }
+
   .text_left > button {
     grid-column: 1/-1;
     margin: 3em auto;
+  }
+
+  .pros {
+    height: auto;
   }
   /* ABOUT PAGE */
   #about_us {
@@ -3601,14 +3639,14 @@ margin-bottom: -5em;
     padding: 1em 2em;
   }
   .textPadding {
-    margin: 3em 2em;
+    margin: 7em 2em;
   }
-  .divItemsForHeight {
+  /* .divItemsForHeight {
     height: 70vh;
-  }
+  } */
   .click_text > .title {
     margin: 0;
-    padding-top: 2em;
+    /* padding-top: 2em; */
   }
   /* .textOnImage {
     padding: 10% 5%;
@@ -3699,7 +3737,7 @@ margin-bottom: -5em;
   #section_whatyouget {
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.1fr 1fr 3fr;
-    height: auto;
+    height: 85vh;
   }
   .img_wrapper {
     width: 80%;
@@ -3710,10 +3748,11 @@ margin-bottom: -5em;
   }
   #section_whatyouget .absolute,
   .img_wrapper .absolute {
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    /* margin: 0; */
     top: 0;
     right: 0;
+    /* left: 25%; */
   }
   /* SECTION PLATFORM   */
   #platform .absolute {
@@ -4100,13 +4139,23 @@ margin-bottom: -5em;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 360px) {
   #projectType .btnRadio {
     height: 20vh;
   }
-  .textPadding {
-    margin: 2em;
+
+  #section_whatyouget {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 3fr;
+    /* height: 85vh; */
   }
+
+  #cons {
+    height: auto;
+  }
+  /* .textPadding {
+    margin: 2em;
+  } */
 
   .platformBox p {
     height: 20vh;
@@ -4142,7 +4191,7 @@ margin-bottom: -5em;
     font-size: 0.8em;
   }
   .divItemsForHeight {
-    height: 75vh;
+    height: auto;
   }
   #villaPage .heroWireframe {
     background-position: 0%;
@@ -4169,7 +4218,7 @@ margin-bottom: -5em;
     margin: 0 0 3em;
   }
   .pros {
-    height: 65vh;
+    height: auto;
   }
   .textOnImage {
     padding: 1em;
@@ -4185,9 +4234,17 @@ margin-bottom: -5em;
   #projectType .btnRadio {
     height: 25vh;
   }
-  .divItemsForHeight {
-    height: 85vh;
+
+  #cons {
+    height: auto;
   }
+  /* .divItemsForHeight {
+    height: 85vh;
+  } */
+
+  /* .divItemsForHeight {
+    height: 40vh;
+  } */
   p {
     font-size: 0.8em;
   }
@@ -4197,9 +4254,9 @@ margin-bottom: -5em;
   .client {
     height: 23em;
   }
-  .pros {
+  /* .pros {
     height: 70vh;
-  }
+  } */
   .textOnImage {
     font-size: 0.9em;
   }
